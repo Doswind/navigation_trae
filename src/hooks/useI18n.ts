@@ -3,6 +3,7 @@ import { useCallback, useEffect, useState } from 'react';
 export type Language = 'zh-CN' | 'en';
 
 const STORAGE_KEY = 'siteNavigator_language';
+const LANGUAGE_CHANGE_EVENT = 'siteNavigator_languageChange';
 
 const translations = {
   'zh-CN': {
@@ -180,6 +181,14 @@ export function useI18n() {
     localStorage.setItem(STORAGE_KEY, language);
   }, [language]);
 
+  useEffect(() => {
+    const handleChange = () => {
+      setLanguageState(getStoredLanguage());
+    };
+    window.addEventListener(LANGUAGE_CHANGE_EVENT, handleChange);
+    return () => window.removeEventListener(LANGUAGE_CHANGE_EVENT, handleChange);
+  }, []);
+
   const t = useCallback(
     (key: keyof typeof translations['zh-CN'], values?: Record<string, string>) => {
       let text = translations[language][key] || translations['zh-CN'][key] || key;
@@ -194,7 +203,9 @@ export function useI18n() {
   );
 
   const setLanguage = useCallback((lang: Language) => {
+    localStorage.setItem(STORAGE_KEY, lang);
     setLanguageState(lang);
+    window.dispatchEvent(new Event(LANGUAGE_CHANGE_EVENT));
   }, []);
 
   return { t, language, setLanguage };

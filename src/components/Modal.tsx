@@ -27,7 +27,7 @@ export function Modal({ isOpen, onClose, title, children, className }: ModalProp
   return (
     <div
       ref={overlayRef}
-      className="fixed inset-0 z-50 flex items-start justify-center bg-black/40 backdrop-blur-sm p-4 pt-[10vh]"
+      className="fixed inset-0 z-50 flex items-start justify-center bg-black/15 backdrop-blur-[1px] p-4 pt-[10vh]"
       onClick={(e) => {
         if (e.target === overlayRef.current) onClose();
       }}

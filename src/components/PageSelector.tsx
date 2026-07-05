@@ -44,41 +44,67 @@ export function PageSelector() {
 
   if (config.pageDisplay === 'tabs') {
     return (
-      <div className="flex items-center gap-1">
-        <div className="flex rounded-lg border border-theme-border bg-theme-card p-1">
-          {data.pages.map((page) => (
-            <div key={page.id} className="group relative flex items-center">
-              <button
-                onClick={() => setCurrentPageId(page.id)}
+      <div className="flex items-center gap-1.5">
+        <div className="flex items-center gap-1 rounded-lg border border-theme-border bg-theme-card p-1">
+          {data.pages.map((page) => {
+            const isActive = currentPageId === page.id;
+            return (
+              <div
+                key={page.id}
                 className={cn(
-                  'rounded-md px-3 py-1.5 text-xs font-medium transition-colors',
-                  currentPageId === page.id
-                    ? 'bg-theme-card-hover text-theme-primary'
-                    : 'text-theme-secondary hover:bg-theme-card-hover/50 hover:text-theme-primary'
+                  'flex items-center gap-1 rounded-md px-2 py-1 text-xs font-medium transition-colors',
+                  isActive
+                    ? 'bg-blue-500 text-white shadow-sm'
+                    : 'text-theme-secondary hover:bg-theme-card-hover hover:text-theme-primary'
                 )}
               >
-                {page.name}
-              </button>
-              {editMode && (
-                <div className="absolute -right-3 top-1/2 z-10 hidden -translate-y-1/2 items-center gap-0.5 group-hover:flex">
-                  <button
-                    onClick={() => handleEditPage(page.id)}
-                    className="rounded p-0.5 text-theme-muted hover:text-yellow-500"
-                  >
-                    <Pencil size={10} />
-                  </button>
-                  <button
-                    onClick={() => handleDeletePage(page.id, page.name)}
-                    className="rounded p-0.5 text-theme-muted hover:text-red-500"
-                  >
-                    <Trash2 size={10} />
-                  </button>
-                </div>
-              )}
-            </div>
-          ))}
+                <button
+                  onClick={() => setCurrentPageId(page.id)}
+                  className="flex items-center gap-1.5"
+                >
+                  <span
+                    className="h-2 w-2 flex-shrink-0 rounded-full ring-1 ring-white/30"
+                    style={{ backgroundColor: page.color }}
+                  />
+                  <span className="truncate max-w-[120px]">{page.name}</span>
+                </button>
+                {editMode && (
+                  <div className="ml-0.5 flex items-center gap-0.5">
+                    <button
+                      onClick={() => handleEditPage(page.id)}
+                      className={cn(
+                        'rounded p-0.5 transition-colors',
+                        isActive
+                          ? 'text-blue-100 hover:bg-white/20 hover:text-white'
+                          : 'text-theme-muted hover:text-yellow-500'
+                      )}
+                      aria-label={t('editPage')}
+                    >
+                      <Pencil size={12} />
+                    </button>
+                    <button
+                      onClick={() => handleDeletePage(page.id, page.name)}
+                      className={cn(
+                        'rounded p-0.5 transition-colors',
+                        isActive
+                          ? 'text-blue-100 hover:bg-white/20 hover:text-white'
+                          : 'text-theme-muted hover:text-red-500'
+                      )}
+                      aria-label={t('deletePage')}
+                    >
+                      <Trash2 size={12} />
+                    </button>
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
-        <button onClick={handleAddPage} className={buttonBase} aria-label={t('addPage')}>
+        <button
+          onClick={handleAddPage}
+          className="rounded-lg border border-dashed border-theme-border bg-theme-card p-1.5 text-theme-secondary transition-colors hover:border-blue-500 hover:text-blue-500"
+          aria-label={t('addPage')}
+        >
           <Plus size={16} />
         </button>
       </div>

@@ -14,6 +14,7 @@
 - **多语言支持**：支持中文和英文切换。
 - **自定义布局**：可设置每行显示的分组数量、站点卡片布局（水平 / 垂直 / 紧凑）、卡片显示内容等。
 - **图标获取**：添加站点时可通过多种图标服务（Google、DuckDuckGo、Clearbit、Icon Horse 等）自动获取站点图标，支持智能选择最快服务。
+- **浏览器扩展**：支持打包为 Chrome / Edge 扩展，替换浏览器默认新标签页。
 
 ## 技术栈
 
@@ -59,6 +60,20 @@ pnpm build
 ```bash
 pnpm preview
 ```
+
+### 构建浏览器扩展
+
+```bash
+pnpm build:extension
+```
+
+构建产物位于 `dist-extension/` 目录，可直接作为浏览器扩展加载：
+
+1. 打开 Chrome / Edge 浏览器的扩展管理页面（`chrome://extensions` 或 `edge://extensions`）。
+2. 开启右上角的「开发者模式」。
+3. 点击「加载已解压的扩展程序」。
+4. 选择项目根目录下的 `dist-extension` 文件夹。
+5. 打开新标签页，即可看到自定义导航页面。
 
 ## 项目结构
 

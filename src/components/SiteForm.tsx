@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Modal } from './Modal';
 import { useAppStore } from '@/store/useAppStore';
 import { useI18n } from '@/hooks/useI18n';
+import { cn } from '@/lib/utils';
 import { fetchSiteIconWithService, iconServices, type IconService } from '@/utils/iconFetch';
 import { normalizeUrl } from '@/utils/helpers';
 import type { Site, SiteEffects } from '@/types';
@@ -79,38 +80,45 @@ export function SiteForm({ site, pageId, groupId, onClose }: SiteFormProps) {
   return (
     <Modal isOpen onClose={onClose} title={site ? t('editSite') : t('addSite')} className="max-w-lg">
       <form onSubmit={handleSubmit} className="space-y-3">
-        <div className="grid grid-cols-2 gap-3">
-          <div>
-            <label className="mb-1.5 block text-xs font-medium text-theme-secondary">{t('siteName')}</label>
-            <input
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className={inputClass}
-              placeholder={t('siteName')}
-              autoFocus
-            />
-          </div>
-          <div>
-            <label className="mb-1.5 block text-xs font-medium text-theme-secondary">{t('siteUrl')}</label>
-            <input
-              type="text"
-              value={url}
-              onChange={(e) => setUrl(e.target.value)}
-              className={inputClass}
-              placeholder="example.com"
-            />
-          </div>
+        <div>
+          <label className="mb-1.5 block text-xs font-medium text-theme-secondary">
+            {t('siteName')}
+            <span className="ml-0.5 text-red-500">*</span>
+          </label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className={inputClass}
+            placeholder={t('siteName')}
+            autoFocus
+            required
+          />
+        </div>
+
+        <div>
+          <label className="mb-1.5 block text-xs font-medium text-theme-secondary">
+            {t('siteUrl')}
+            <span className="ml-0.5 text-red-500">*</span>
+          </label>
+          <input
+            type="text"
+            value={url}
+            onChange={(e) => setUrl(e.target.value)}
+            className={inputClass}
+            placeholder="example.com"
+            required
+          />
         </div>
 
         <div>
           <label className="mb-1.5 block text-xs font-medium text-theme-secondary">{t('siteDescription')}</label>
-          <input
-            type="text"
+          <textarea
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-            className={inputClass}
+            className={cn(inputClass, 'min-h-[80px] resize-y')}
             placeholder={t('siteDescription')}
+            rows={3}
           />
         </div>
 

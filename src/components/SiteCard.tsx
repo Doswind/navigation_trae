@@ -50,6 +50,27 @@ export function SiteCard({ site, groupId, pageId, index }: SiteCardProps) {
     });
   };
 
+  const NameHandle = ({
+    as: Component = 'span',
+    className,
+  }: {
+    as?: 'span' | 'div';
+    className?: string;
+  }) =>
+    showName ? (
+      <Component
+        {...attributes}
+        {...listeners}
+        className={cn(
+          'truncate text-xs font-medium text-theme-primary',
+          editMode && 'cursor-grab active:cursor-grabbing',
+          className
+        )}
+      >
+        {site.name}
+      </Component>
+    ) : null;
+
   const effectClasses = cn(
     site.effects.highlight && 'effect-highlight',
     site.effects.blink && 'effect-blink',
@@ -84,10 +105,8 @@ export function SiteCard({ site, groupId, pageId, index }: SiteCardProps) {
         animationDelay: `${index * 20}ms`,
         zIndex: isDragging ? 50 : undefined,
       }}
-      {...attributes}
       className={cn(
         'group relative animate-fade-in-up rounded-md border border-theme-border bg-theme-card p-2 transition-all hover:-translate-y-0.5 hover:border-theme-border-strong hover:bg-theme-card-hover hover:shadow-md',
-        editMode && 'cursor-grab active:cursor-grabbing',
         isDragging && 'opacity-50',
         effectClasses
       )}
@@ -106,20 +125,20 @@ export function SiteCard({ site, groupId, pageId, index }: SiteCardProps) {
         {layout === 'compact' && (
           <>
             {iconEl}
-            {showName && <span className="truncate text-xs font-medium text-theme-primary">{site.name}</span>}
+            <NameHandle className="flex-1" />
           </>
         )}
         {layout === 'horizontal' && (
           <div className="flex w-full flex-col items-center gap-1.5 text-center">
             {iconEl}
-            {showName && <span className="truncate text-xs font-medium text-theme-primary">{site.name}</span>}
+            <NameHandle className="w-full" />
           </div>
         )}
         {layout === 'vertical' && (
           <div className="flex w-full items-start gap-2">
             {iconEl}
             <div className="min-w-0 flex-1">
-              {showName && <div className="truncate text-xs font-medium text-theme-primary">{site.name}</div>}
+              <NameHandle as="div" className="w-full" />
               {showUrl && <div className="truncate text-[10px] text-theme-muted">{getDomain(site.url)}</div>}
               {showDesc && site.description && <div className="truncate text-[10px] text-theme-muted">{site.description}</div>}
             </div>
@@ -128,7 +147,7 @@ export function SiteCard({ site, groupId, pageId, index }: SiteCardProps) {
       </div>
 
       {(layout === 'compact' || layout === 'horizontal') && (
-        <div className="min-w-0">
+        <div className={cn('min-w-0', layout === 'horizontal' && 'w-full text-center')}>
           {showUrl && (layout === 'compact' || layout === 'horizontal') && (
             <div className="truncate text-[10px] text-theme-muted">{getDomain(site.url)}</div>
           )}

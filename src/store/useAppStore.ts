@@ -8,8 +8,8 @@ const CONFIG_KEY = 'siteNavigatorConfig';
 const CURRENT_PAGE_KEY = 'siteNavigator_currentPageId';
 
 const defaultConfig: AppConfig = {
-  theme: 'dark',
-  pageDisplay: 'dropdown',
+  theme: 'system',
+  pageDisplay: 'tabs',
   groupsPerRow: 4,
   showIcon: true,
   showName: true,
