@@ -4,6 +4,7 @@ import { Plus, Pencil, Trash2, GripVertical } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useAppStore } from '@/store/useAppStore';
 import { useI18n } from '@/hooks/useI18n';
+import { getFontSizeConfig } from '@/utils/helpers';
 import { SiteCard } from './SiteCard';
 import type { Group } from '@/types';
 
@@ -16,6 +17,7 @@ interface GroupCardProps {
 export function GroupCard({ group, pageId, index }: GroupCardProps) {
   const { t } = useI18n();
   const { config, editMode, openModal, openConfirm, deleteGroup } = useAppStore();
+  const fs = getFontSizeConfig(config.fontSize);
   const {
     attributes,
     listeners,
@@ -45,12 +47,40 @@ export function GroupCard({ group, pageId, index }: GroupCardProps) {
     });
   };
 
-  const siteColumnClass =
-    config.cardLayout === 'horizontal'
-      ? 'grid-cols-2 sm:grid-cols-3 lg:grid-cols-4'
-      : config.cardLayout === 'vertical'
-      ? 'grid-cols-1 sm:grid-cols-2'
-      : 'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4';
+  const siteColumnClass = (() => {
+    const { groupsPerRow, cardLayout } = config;
+    if (cardLayout === 'horizontal') {
+      const map: Record<number, string> = {
+        1: 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6',
+        2: 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4',
+        3: 'grid-cols-2 sm:grid-cols-2 md:grid-cols-3',
+        4: 'grid-cols-2 sm:grid-cols-2 md:grid-cols-2',
+        5: 'grid-cols-1 sm:grid-cols-2 md:grid-cols-2',
+        6: 'grid-cols-1 sm:grid-cols-2',
+      };
+      return map[groupsPerRow] || 'grid-cols-2 sm:grid-cols-3';
+    }
+    if (cardLayout === 'vertical') {
+      const map: Record<number, string> = {
+        1: 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4',
+        2: 'grid-cols-1 sm:grid-cols-2 md:grid-cols-2',
+        3: 'grid-cols-1 sm:grid-cols-1 md:grid-cols-2',
+        4: 'grid-cols-1 sm:grid-cols-1',
+        5: 'grid-cols-1',
+        6: 'grid-cols-1',
+      };
+      return map[groupsPerRow] || 'grid-cols-1 sm:grid-cols-2';
+    }
+    const map: Record<number, string> = {
+      1: 'grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 xl:grid-cols-12',
+      2: 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6',
+      3: 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4',
+      4: 'grid-cols-2 sm:grid-cols-2 md:grid-cols-3',
+      5: 'grid-cols-2 sm:grid-cols-2 md:grid-cols-3',
+      6: 'grid-cols-1 sm:grid-cols-2 md:grid-cols-2',
+    };
+    return map[groupsPerRow] || 'grid-cols-2 sm:grid-cols-3 lg:grid-cols-4';
+  })();
 
   return (
     <div
@@ -69,10 +99,10 @@ export function GroupCard({ group, pageId, index }: GroupCardProps) {
       )}
     >
       <div
-        className="flex items-center justify-between rounded-t-lg px-3 py-2"
+        className={cn('flex items-center justify-between rounded-t-lg', fs.groupHeaderPadding)}
         style={{ backgroundColor: `${group.color}18`, borderBottom: `1px solid ${group.color}40` }}
       >
-        <div className="flex items-center gap-2">
+        <div className={cn('flex items-center', fs.gap)}>
           {editMode && (
             <button
               {...listeners}
@@ -83,10 +113,10 @@ export function GroupCard({ group, pageId, index }: GroupCardProps) {
             </button>
           )}
           <div className="h-2 w-2 rounded-full" style={{ backgroundColor: group.color }} />
-          <h3 className="font-display text-sm font-semibold" style={{ color: group.color }}>
+          <h3 className={cn('font-display font-semibold', fs.nameClass)} style={{ color: group.color }}>
             {group.name}
           </h3>
-          <span className="text-[10px] text-theme-muted">({group.sites.length})</span>
+          <span className={cn('text-theme-muted', fs.siteCountClass)}>({group.sites.length})</span>
         </div>
 
         {editMode && (
@@ -116,12 +146,12 @@ export function GroupCard({ group, pageId, index }: GroupCardProps) {
         )}
       </div>
 
-      <div className="p-2">
+      <div className={fs.groupPadding}>
         {group.sites.length === 0 ? (
-          <div className="py-4 text-center text-xs text-theme-muted">{t('emptyGroup')}</div>
+          <div className={cn('py-4 text-center text-theme-muted', fs.urlClass)}>{t('emptyGroup')}</div>
         ) : (
           <SortableContext items={group.sites.map((s) => s.id)} strategy={rectSortingStrategy}>
-            <div className={cn('grid gap-1.5', siteColumnClass)}>
+            <div className={cn('grid', config.cardLayout === 'compact' ? 'gap-1' : fs.gridGap, siteColumnClass)}>
               {group.sites.map((site, idx) => (
                 <SiteCard key={site.id} site={site} groupId={group.id} pageId={pageId} index={idx} />
               ))}

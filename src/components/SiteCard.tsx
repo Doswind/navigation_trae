@@ -4,7 +4,7 @@ import { Pencil, Trash2, GripVertical } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useAppStore } from '@/store/useAppStore';
 import { useI18n } from '@/hooks/useI18n';
-import { getDomain, normalizeUrl } from '@/utils/helpers';
+import { getDomain, normalizeUrl, getFontSizeConfig } from '@/utils/helpers';
 import type { Site } from '@/types';
 
 interface SiteCardProps {
@@ -17,6 +17,7 @@ interface SiteCardProps {
 export function SiteCard({ site, groupId, pageId, index }: SiteCardProps) {
   const { t } = useI18n();
   const { config, editMode, openModal, openConfirm, deleteSite } = useAppStore();
+  const fs = getFontSizeConfig(config.fontSize);
   const {
     attributes,
     listeners,
@@ -62,7 +63,8 @@ export function SiteCard({ site, groupId, pageId, index }: SiteCardProps) {
         {...attributes}
         {...listeners}
         className={cn(
-          'truncate text-xs font-medium text-theme-primary',
+          'truncate font-medium text-theme-primary',
+          fs.nameClass,
           editMode && 'cursor-grab active:cursor-grabbing',
           className
         )}
@@ -87,7 +89,7 @@ export function SiteCard({ site, groupId, pageId, index }: SiteCardProps) {
     <img
       src={site.icon || `https://www.google.com/s2/favicons?domain=${getDomain(site.url)}&sz=64`}
       alt=""
-      className="h-4 w-4 flex-shrink-0 rounded-sm object-contain"
+      className={cn('flex-shrink-0 rounded-sm object-contain', fs.iconClass)}
       onError={(e) => {
         (e.target as HTMLImageElement).src = 'https://www.google.com/s2/favicons?domain=example.com&sz=64';
       }}
@@ -106,7 +108,8 @@ export function SiteCard({ site, groupId, pageId, index }: SiteCardProps) {
         zIndex: isDragging ? 50 : undefined,
       }}
       className={cn(
-        'group relative animate-fade-in-up rounded-md border border-theme-border bg-theme-card p-2 transition-all hover:-translate-y-0.5 hover:border-theme-border-strong hover:bg-theme-card-hover hover:shadow-md',
+        'group relative animate-fade-in-up rounded-md border border-theme-border bg-theme-card transition-all hover:-translate-y-0.5 hover:border-theme-border-strong hover:bg-theme-card-hover hover:shadow-md',
+        fs.cardPadding,
         isDragging && 'opacity-50',
         effectClasses
       )}
@@ -121,7 +124,7 @@ export function SiteCard({ site, groupId, pageId, index }: SiteCardProps) {
         </div>
       )}
 
-      <div className="flex items-center gap-2">
+      <div className={cn('flex items-center', fs.gap)}>
         {layout === 'compact' && (
           <>
             {iconEl}
@@ -129,18 +132,18 @@ export function SiteCard({ site, groupId, pageId, index }: SiteCardProps) {
           </>
         )}
         {layout === 'horizontal' && (
-          <div className="flex w-full flex-col items-center gap-1.5 text-center">
+          <div className={cn('flex w-full flex-col items-center text-center', fs.gap)}>
             {iconEl}
             <NameHandle className="w-full" />
           </div>
         )}
         {layout === 'vertical' && (
-          <div className="flex w-full items-start gap-2">
+          <div className={cn('flex w-full items-start', fs.gap)}>
             {iconEl}
             <div className="min-w-0 flex-1">
               <NameHandle as="div" className="w-full" />
-              {showUrl && <div className="truncate text-[10px] text-theme-muted">{getDomain(site.url)}</div>}
-              {showDesc && site.description && <div className="truncate text-[10px] text-theme-muted">{site.description}</div>}
+              {showUrl && <div className={cn('truncate text-theme-muted', fs.urlClass)}>{getDomain(site.url)}</div>}
+              {showDesc && site.description && <div className={cn('truncate text-theme-muted', fs.descClass)}>{site.description}</div>}
             </div>
           </div>
         )}
@@ -149,10 +152,10 @@ export function SiteCard({ site, groupId, pageId, index }: SiteCardProps) {
       {(layout === 'compact' || layout === 'horizontal') && (
         <div className={cn('min-w-0', layout === 'horizontal' && 'w-full text-center')}>
           {showUrl && (layout === 'compact' || layout === 'horizontal') && (
-            <div className="truncate text-[10px] text-theme-muted">{getDomain(site.url)}</div>
+            <div className={cn('truncate text-theme-muted', fs.urlClass)}>{getDomain(site.url)}</div>
           )}
           {showDesc && site.description && (layout === 'compact' || layout === 'horizontal') && (
-            <div className="truncate text-[10px] text-theme-muted">{site.description}</div>
+            <div className={cn('truncate text-theme-muted', fs.descClass)}>{site.description}</div>
           )}
         </div>
       )}

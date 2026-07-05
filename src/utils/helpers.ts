@@ -40,3 +40,91 @@ export function formatDateForFilename(date = new Date()): string {
   const d = String(date.getDate()).padStart(2, '0');
   return `${y}-${m}-${d}`;
 }
+
+export type FontSizeLevel = 'xs' | 'sm' | 'base' | 'lg' | 'xl';
+
+export interface FontSizeConfig {
+  labelKey: string;
+  nameClass: string;
+  urlClass: string;
+  descClass: string;
+  iconClass: string;
+  cardPadding: string;
+  groupPadding: string;
+  groupHeaderPadding: string;
+  gap: string;
+  gridGap: string;
+  siteCountClass: string;
+}
+
+export const fontSizeMap: Record<FontSizeLevel, FontSizeConfig> = {
+  xs: {
+    labelKey: 'fontSizeXs',
+    nameClass: 'text-[11px]',
+    urlClass: 'text-[9px]',
+    descClass: 'text-[9px]',
+    iconClass: 'h-3.5 w-3.5',
+    cardPadding: 'px-1.5 py-1',
+    groupPadding: 'p-1.5',
+    groupHeaderPadding: 'px-2 py-1.5',
+    gap: 'gap-1',
+    gridGap: 'gap-1',
+    siteCountClass: 'text-[9px]',
+  },
+  sm: {
+    labelKey: 'fontSizeSm',
+    nameClass: 'text-xs',
+    urlClass: 'text-[10px]',
+    descClass: 'text-[10px]',
+    iconClass: 'h-4 w-4',
+    cardPadding: 'p-2',
+    groupPadding: 'p-2',
+    groupHeaderPadding: 'px-3 py-2',
+    gap: 'gap-1.5',
+    gridGap: 'gap-1.5',
+    siteCountClass: 'text-[10px]',
+  },
+  base: {
+    labelKey: 'fontSizeBase',
+    nameClass: 'text-sm',
+    urlClass: 'text-xs',
+    descClass: 'text-xs',
+    iconClass: 'h-5 w-5',
+    cardPadding: 'p-2.5',
+    groupPadding: 'p-2.5',
+    groupHeaderPadding: 'px-3 py-2.5',
+    gap: 'gap-2',
+    gridGap: 'gap-2',
+    siteCountClass: 'text-xs',
+  },
+  lg: {
+    labelKey: 'fontSizeLg',
+    nameClass: 'text-base',
+    urlClass: 'text-sm',
+    descClass: 'text-sm',
+    iconClass: 'h-6 w-6',
+    cardPadding: 'p-3',
+    groupPadding: 'p-3',
+    groupHeaderPadding: 'px-4 py-3',
+    gap: 'gap-2.5',
+    gridGap: 'gap-2.5',
+    siteCountClass: 'text-sm',
+  },
+  xl: {
+    labelKey: 'fontSizeXl',
+    nameClass: 'text-lg',
+    urlClass: 'text-base',
+    descClass: 'text-base',
+    iconClass: 'h-7 w-7',
+    cardPadding: 'p-3.5',
+    groupPadding: 'p-3.5',
+    groupHeaderPadding: 'px-4 py-3.5',
+    gap: 'gap-3',
+    gridGap: 'gap-3',
+    siteCountClass: 'text-base',
+  },
+};
+
+export function getFontSizeConfig(level: FontSizeLevel): FontSizeConfig {
+  return fontSizeMap[level] || fontSizeMap.sm;
+}

@@ -2,7 +2,7 @@ import { Moon, Sun, Monitor } from 'lucide-react';
 import { Modal } from './Modal';
 import { useAppStore } from '@/store/useAppStore';
 import { useI18n, type Language } from '@/hooks/useI18n';
-import type { AppConfig, CardLayout, PageDisplay, ThemeMode } from '@/types';
+import type { AppConfig, CardLayout, FontSize, PageDisplay, ThemeMode } from '@/types';
 
 export function SettingsPanel({ onClose }: { onClose: () => void }) {
   const { t, language, setLanguage } = useI18n();
@@ -77,6 +77,26 @@ export function SettingsPanel({ onClose }: { onClose: () => void }) {
           <div className="mt-1 flex justify-between text-[10px] text-theme-muted">
             <span>1</span>
             <span>6</span>
+          </div>
+        </div>
+
+        <div>
+          <label className="mb-1.5 block text-xs font-medium text-theme-secondary">{t('fontSize')}</label>
+          <div className="flex gap-2">
+            {(['xs', 'sm', 'base', 'lg', 'xl'] as FontSize[]).map((size) => (
+              <button
+                key={size}
+                type="button"
+                onClick={() => update('fontSize', size)}
+                className={`flex-1 rounded-md border px-2 py-2 text-xs font-medium transition-colors ${
+                  config.fontSize === size
+                    ? 'border-blue-500/50 bg-blue-500/10 text-blue-500'
+                    : 'border-theme-border bg-theme-input text-theme-secondary hover:bg-theme-card-hover'
+                }`}
+              >
+                {t(`fontSize${size.charAt(0).toUpperCase() + size.slice(1)}` as never)}
+              </button>
+            ))}
           </div>
         </div>
 

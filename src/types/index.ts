@@ -35,6 +35,7 @@ export interface AppData {
 export type PageDisplay = 'dropdown' | 'tabs';
 export type CardLayout = 'horizontal' | 'vertical' | 'compact';
 export type ThemeMode = 'dark' | 'light' | 'system';
+export type FontSize = 'xs' | 'sm' | 'base' | 'lg' | 'xl';
 
 export interface AppConfig {
   theme: ThemeMode;
@@ -45,6 +46,7 @@ export interface AppConfig {
   showUrl: boolean;
   showDescription: boolean;
   cardLayout: CardLayout;
+  fontSize: FontSize;
 }
 
 export type ModalType =

@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import type { AppConfig, AppData, CardLayout, ConfirmOptions, Group, ModalData, ModalType, Page, PageDisplay, Site } from '@/types';
+import type { AppConfig, AppData, CardLayout, ConfirmOptions, FontSize, Group, ModalData, ModalType, Page, PageDisplay, Site } from '@/types';
 import { sampleData } from '@/utils/sampleData';
 import { generateId } from '@/utils/helpers';
 
@@ -16,6 +16,7 @@ const defaultConfig: AppConfig = {
   showUrl: false,
   showDescription: false,
   cardLayout: 'compact',
+  fontSize: 'sm',
 };
 
 function applyTheme(theme: AppConfig['theme']) {
