@@ -7,6 +7,7 @@ import { fetchSiteIconWithService, iconServices, type IconService } from '@/util
 import { normalizeUrl } from '@/utils/helpers';
 import type { Site, SiteEffects } from '@/types';
 import { Sparkles, Flame, Rocket, AlertTriangle, Loader2 } from 'lucide-react';
+import type { TranslationKey } from '@/hooks/useI18n';
 
 interface SiteFormProps {
   site?: Site;
@@ -14,6 +15,19 @@ interface SiteFormProps {
   groupId?: string;
   onClose: () => void;
 }
+
+const serviceLabelMap: Record<IconService, TranslationKey> = {
+  smart: 'iconServiceSmart',
+  faviconsnap: 'iconServiceFaviconsnap',
+  faviconis: 'iconServiceFaviconis',
+  iconhorse: 'iconServiceIconhorse',
+  clearbit: 'iconServiceClearbit',
+  google: 'iconServiceGoogle',
+  duckduckgo: 'iconServiceDuckduckgo',
+  faviconkit: 'iconServiceFaviconkit',
+  yandex: 'iconServiceYandex',
+  direct: 'iconServiceDirect',
+};
 
 const emptyEffects: SiteEffects = {};
 
@@ -132,11 +146,7 @@ export function SiteForm({ site, pageId, groupId, onClose }: SiteFormProps) {
             >
               {iconServices.map((s) => (
                 <option key={s} value={s}>
-                  {s === 'smart'
-                    ? t('iconServiceSmart')
-                    : s === 'direct'
-                    ? t('iconServiceDirect')
-                    : s.charAt(0).toUpperCase() + s.slice(1)}
+                  {t(serviceLabelMap[s])}
                 </option>
               ))}
             </select>

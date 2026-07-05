@@ -33,6 +33,14 @@ const translations = {
     fetchIcon: '获取图标',
     iconService: '图标服务',
     iconServiceSmart: '智能选择',
+    iconServiceFaviconsnap: 'FaviconSnap',
+    iconServiceFaviconis: 'Favicon.is',
+    iconServiceIconhorse: 'Icon Horse',
+    iconServiceClearbit: 'Clearbit',
+    iconServiceGoogle: 'Google',
+    iconServiceDuckduckgo: 'DuckDuckGo',
+    iconServiceFaviconkit: 'FaviconKit',
+    iconServiceYandex: 'Yandex',
     iconServiceDirect: '直接获取',
     effects: '特效',
     effectHighlight: '高亮显示',
@@ -119,6 +127,14 @@ const translations = {
     fetchIcon: 'Fetch Icon',
     iconService: 'Icon Service',
     iconServiceSmart: 'Smart Select',
+    iconServiceFaviconsnap: 'FaviconSnap',
+    iconServiceFaviconis: 'Favicon.is',
+    iconServiceIconhorse: 'Icon Horse',
+    iconServiceClearbit: 'Clearbit',
+    iconServiceGoogle: 'Google',
+    iconServiceDuckduckgo: 'DuckDuckGo',
+    iconServiceFaviconkit: 'FaviconKit',
+    iconServiceYandex: 'Yandex',
     iconServiceDirect: 'Direct',
     effects: 'Effects',
     effectHighlight: 'Highlight',
@@ -179,6 +195,8 @@ const translations = {
     preview: 'Preview',
   },
 };
+
+export type TranslationKey = keyof typeof translations['zh-CN'];
 
 function getStoredLanguage(): Language {
   const stored = localStorage.getItem(STORAGE_KEY);

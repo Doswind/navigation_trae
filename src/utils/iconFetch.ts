@@ -2,23 +2,40 @@ import { getDomain, normalizeUrl } from './helpers';
 
 export type IconService =
   | 'smart'
-  | 'google'
-  | 'duckduckgo'
-  | 'clearbit'
+  | 'faviconsnap'
+  | 'faviconis'
   | 'iconhorse'
+  | 'clearbit'
+  | 'google'
   | 'faviconkit'
-  | 'yandex'
-  | 'direct';
+  | 'duckduckgo'
+  | 'direct'
+  | 'yandex';
 
 export const iconServices: IconService[] = [
   'smart',
-  'google',
-  'duckduckgo',
-  'clearbit',
+  'faviconsnap',
+  'faviconis',
   'iconhorse',
+  'clearbit',
+  'google',
   'faviconkit',
-  'yandex',
+  'duckduckgo',
   'direct',
+  'yandex',
+];
+
+// 智能选择时的请求顺序：优先清晰且稳定的服务，再兜底
+const smartOrder: Exclude<IconService, 'smart'>[] = [
+  'faviconsnap',
+  'faviconis',
+  'iconhorse',
+  'clearbit',
+  'google',
+  'faviconkit',
+  'duckduckgo',
+  'direct',
+  'yandex',
 ];
 
 const knownIcons: Record<string, string> = {
@@ -52,14 +69,18 @@ function getRootDomain(url: string): string {
 
 function buildServiceUrl(service: IconService, rootDomain: string, normalizedUrl: string): string {
   switch (service) {
+    case 'faviconsnap':
+      return `https://faviconsnap.com/api/favicon?url=${encodeURIComponent(rootDomain)}&size=128`;
+    case 'faviconis':
+      return `https://favicon.is/${rootDomain}?larger=true`;
+    case 'iconhorse':
+      return `https://icon.horse/icon/${rootDomain}`;
+    case 'clearbit':
+      return `https://logo.clearbit.com/${rootDomain}`;
     case 'google':
       return `https://www.google.com/s2/favicons?domain=${rootDomain}&sz=128`;
     case 'duckduckgo':
       return `https://icons.duckduckgo.com/ip3/${rootDomain}.ico`;
-    case 'clearbit':
-      return `https://logo.clearbit.com/${rootDomain}`;
-    case 'iconhorse':
-      return `https://icon.horse/icon/${rootDomain}`;
     case 'faviconkit':
       return `https://api.faviconkit.com/${rootDomain}/144`;
     case 'yandex':
@@ -67,11 +88,11 @@ function buildServiceUrl(service: IconService, rootDomain: string, normalizedUrl
     case 'direct':
       return `${normalizedUrl.replace(/\/$/, '')}/favicon.ico`;
     default:
-      return `https://www.google.com/s2/favicons?domain=${rootDomain}&sz=128`;
+      return `https://faviconsnap.com/api/favicon?url=${encodeURIComponent(rootDomain)}&size=128`;
   }
 }
 
-function buildIconUrls(url: string): string[] {
+function buildSmartUrls(url: string): string[] {
   const normalized = normalizeUrl(url);
   const rootDomain = getRootDomain(url);
 
@@ -81,58 +102,70 @@ function buildIconUrls(url: string): string[] {
     urls.push(knownIcons[rootDomain]);
   }
 
-  urls.push(
-    `https://logo.clearbit.com/${rootDomain}`,
-    `https://icon.horse/icon/${rootDomain}`,
-    `https://www.google.com/s2/favicons?domain=${rootDomain}&sz=128`,
-    `https://favicon.yandex.net/favicon/${rootDomain}`,
-    `https://api.faviconkit.com/${rootDomain}/144`,
-    `https://icons.duckduckgo.com/ip3/${rootDomain}.ico`,
-    `${normalized.replace(/\/$/, '')}/favicon.ico`
-  );
+  smartOrder.forEach((service) => {
+    urls.push(buildServiceUrl(service, rootDomain, normalized));
+  });
 
   return urls;
 }
 
-function probeImage(src: string): Promise<string> {
+function probeImage(src: string, timeout = 3000): Promise<string> {
   return new Promise((resolve, reject) => {
     const img = new Image();
     img.crossOrigin = 'anonymous';
-    const timer = setTimeout(() => reject(new Error('timeout')), 5000);
-    img.onload = () => {
+
+    let settled = false;
+    const timer = setTimeout(() => {
+      if (settled) return;
+      settled = true;
+      cleanup();
+      reject(new Error('timeout'));
+    }, timeout);
+
+    const cleanup = () => {
       clearTimeout(timer);
-      resolve(src);
+      img.onload = null;
+      img.onerror = null;
     };
+
+    img.onload = () => {
+      if (settled) return;
+      settled = true;
+      cleanup();
+
+      const isSvg = /\.svg(\?|$)/i.test(src);
+      if (isSvg || (img.naturalWidth >= 16 && img.naturalHeight >= 16)) {
+        resolve(src);
+      } else {
+        reject(new Error('too small'));
+      }
+    };
+
     img.onerror = () => {
-      clearTimeout(timer);
+      if (settled) return;
+      settled = true;
+      cleanup();
       reject(new Error('load error'));
     };
+
     img.src = src;
   });
 }
 
-async function raceSuccess<T>(promises: Promise<T>[]): Promise<T> {
-  if (promises.length === 0) return Promise.reject(new Error('empty'));
-  let rejectedCount = 0;
-  return new Promise((resolve, reject) => {
-    promises.forEach((p) => {
-      p.then(resolve, () => {
-        rejectedCount++;
-        if (rejectedCount === promises.length) {
-          reject(new Error('all failed'));
-        }
-      });
-    });
-  });
+async function tryInSequence(urls: string[]): Promise<string | null> {
+  for (const url of urls) {
+    try {
+      return await probeImage(url);
+    } catch {
+      // 继续尝试下一个
+    }
+  }
+  return null;
 }
 
 export async function fetchSiteIcon(url: string): Promise<string | null> {
-  const urls = buildIconUrls(url);
-  try {
-    return await raceSuccess(urls.map(probeImage));
-  } catch {
-    return null;
-  }
+  const urls = buildSmartUrls(url);
+  return tryInSequence(urls);
 }
 
 export async function fetchSiteIconWithService(
