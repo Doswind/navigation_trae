@@ -1,1655 +1,1673 @@
 {
   "pages": [
     {
+      "id": "page_mr7mwzfv_ri92n6",
       "name": "常用导航",
-      "color": "#007bff",
+      "color": "#95c4f9",
       "groups": [
         {
+          "id": "group_mr7mwzfv_620uwa",
           "name": "搜索引擎",
           "color": "#28a745",
           "sites": [
             {
+              "id": "site_mr7mwzfv_3khgy2",
               "name": "Google",
               "url": "https://www.google.com",
-              "icon": "https://www.google.com/favicon.ico",
               "description": "全球最大的搜索引擎",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.google.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_leq3pd",
               "name": "百度",
               "url": "https://www.baidu.com",
-              "icon": "https://www.baidu.com/favicon.ico",
               "description": "中国最大的搜索引擎",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/www.baidu.com",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_hh7gj4",
               "name": "必应",
               "url": "https://www.bing.com",
-              "icon": "https://www.bing.com/favicon.ico",
               "description": "微软搜索引擎",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.bing.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_62pqn7",
               "name": "DuckDuckGo",
               "url": "https://duckduckgo.com",
-              "icon": "https://duckduckgo.com/favicon.ico",
               "description": "注重隐私的搜索引擎",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/duckduckgo.com",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_4whv3c",
               "name": "搜狗",
               "url": "https://www.sogou.com",
-              "icon": "https://www.sogou.com/favicon.ico",
               "description": "搜狗搜索引擎",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.sogou.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_npf3t0",
               "name": "360搜索",
               "url": "https://www.so.com",
-              "icon": "https://www.so.com/favicon.ico",
               "description": "360搜索引擎",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.so.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_zv5o84",
               "name": "Yandex",
               "url": "https://yandex.com",
-              "icon": "https://yandex.com/favicon.ico",
               "description": "俄罗斯搜索引擎",
-              "highlight": false,
-              "blink": false
+              "icon": "https://yandex.com/favicon.ico",
+              "effects": {}
             }
           ]
         },
         {
-          "name": "社交媒体",
-          "color": "#dc3545",
-          "sites": [
-            {
-              "name": "微信网页版",
-              "url": "https://wx.qq.com",
-              "icon": "https://wx.qq.com/favicon.ico",
-              "description": "微信网页版",
-              "highlight": false,
-              "blink": false
-            },
-            {
-              "name": "微博",
-              "url": "https://weibo.com",
-              "icon": "https://weibo.com/favicon.ico",
-              "description": "新浪微博",
-              "highlight": false,
-              "blink": false
-            },
-            {
-              "name": "Twitter",
-              "url": "https://twitter.com",
-              "icon": "https://twitter.com/favicon.ico",
-              "description": "推特社交平台",
-              "highlight": false,
-              "blink": false
-            },
-            {
-              "name": "Facebook",
-              "url": "https://www.facebook.com",
-              "icon": "https://www.facebook.com/favicon.ico",
-              "description": "脸书社交网络",
-              "highlight": false,
-              "blink": false
-            },
-            {
-              "name": "LinkedIn",
-              "url": "https://www.linkedin.com",
-              "icon": "https://www.linkedin.com/favicon.ico",
-              "description": "职业社交网络",
-              "highlight": false,
-              "blink": false
-            },
-            {
-              "name": "Instagram",
-              "url": "https://www.instagram.com",
-              "icon": "https://www.instagram.com/favicon.ico",
-              "description": "图片分享社交平台",
-              "highlight": false,
-              "blink": false
-            },
-            {
-              "name": "Reddit",
-              "url": "https://www.reddit.com",
-              "icon": "https://www.reddit.com/favicon.ico",
-              "description": "社区讨论平台",
-              "highlight": false,
-              "blink": false
-            },
-            {
-              "name": "Discord",
-              "url": "https://discord.com",
-              "icon": "https://discord.com/favicon.ico",
-              "description": "游戏社区聊天平台",
-              "highlight": false,
-              "blink": false
-            },
-            {
-              "name": "TikTok",
-              "url": "https://www.tiktok.com",
-              "icon": "https://www.tiktok.com/favicon.ico",
-              "description": "短视频分享平台",
-              "highlight": false,
-              "blink": false
-            },
-            {
-              "name": "Snapchat",
-              "url": "https://www.snapchat.com",
-              "icon": "https://www.snapchat.com/favicon.ico",
-              "description": "阅后即焚社交应用",
-              "highlight": false,
-              "blink": false
-            },
-            {
-              "name": "Pinterest",
-              "url": "https://www.pinterest.com",
-              "icon": "https://www.pinterest.com/favicon.ico",
-              "description": "图片收藏分享平台",
-              "highlight": false,
-              "blink": false
-            },
-            {
-              "name": "Telegram",
-              "url": "https://web.telegram.org",
-              "icon": "https://web.telegram.org/favicon.ico",
-              "description": "即时通讯应用",
-              "highlight": false,
-              "blink": false
-            }
-          ]
-        },
-        {
+          "id": "group_mr7mwzfv_b59jha",
           "name": "开发工具",
           "color": "#6f42c1",
           "sites": [
             {
+              "id": "site_mr7mwzfv_fvhdnx",
               "name": "GitHub",
               "url": "https://github.com",
-              "icon": "https://github.com/favicon.ico",
               "description": "代码托管平台",
-              "highlight": true,
-              "blink": false
+              "icon": "https://github.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_419wk3",
               "name": "GitLab",
               "url": "https://gitlab.com",
-              "icon": "https://gitlab.com/favicon.ico",
               "description": "DevOps平台",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/gitlab.com",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_t7ff4p",
               "name": "Stack Overflow",
               "url": "https://stackoverflow.com",
-              "icon": "https://stackoverflow.com/favicon.ico",
               "description": "程序员问答社区",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/stackoverflow.com",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_ocaq43",
               "name": "MDN Web Docs",
               "url": "https://developer.mozilla.org",
-              "icon": "https://developer.mozilla.org/favicon.ico",
               "description": "Web开发文档",
-              "highlight": false,
-              "blink": false
+              "icon": "https://developer.mozilla.org/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_znq9l7",
               "name": "CodePen",
               "url": "https://codepen.io",
-              "icon": "https://codepen.io/favicon.ico",
               "description": "前端代码演示平台",
-              "highlight": false,
-              "blink": false
+              "icon": "https://codepen.io/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_utajkr",
               "name": "掘金",
               "url": "https://juejin.cn",
-              "icon": "https://juejin.cn/favicon.ico",
               "description": "技术社区",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/juejin.cn",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_i5jb7y",
               "name": "Bitbucket",
               "url": "https://bitbucket.org",
-              "icon": "https://bitbucket.org/favicon.ico",
               "description": "Atlassian代码托管",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/bitbucket.org",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_9kdanb",
               "name": "JSFiddle",
               "url": "https://jsfiddle.net",
-              "icon": "https://jsfiddle.net/favicon.ico",
               "description": "在线代码编辑器",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/jsfiddle.net",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_c186ml",
               "name": "Replit",
               "url": "https://replit.com",
-              "icon": "https://replit.com/favicon.ico",
               "description": "在线编程环境",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/replit.com",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_ov6s8x",
               "name": "Docker Hub",
               "url": "https://hub.docker.com",
-              "icon": "https://hub.docker.com/favicon.ico",
               "description": "容器镜像仓库",
-              "highlight": false,
-              "blink": false
+              "icon": "https://hub.docker.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_skfm10",
               "name": "npm",
               "url": "https://www.npmjs.com",
-              "icon": "https://www.npmjs.com/favicon.ico",
               "description": "Node.js包管理器",
-              "highlight": false,
-              "blink": false
+              "icon": "https://faviconsnap.com/api/favicon?url=npmjs.com&size=128",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_xvy2nc",
               "name": "PyPI",
               "url": "https://pypi.org",
-              "icon": "https://pypi.org/favicon.ico",
               "description": "Python包索引",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/pypi.org",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_1do39w",
               "name": "Visual Studio Code",
               "url": "https://code.visualstudio.com",
-              "icon": "https://code.visualstudio.com/favicon.ico",
               "description": "微软代码编辑器",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/code.visualstudio.com",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_jkgq2p",
               "name": "JetBrains",
               "url": "https://www.jetbrains.com",
-              "icon": "https://www.jetbrains.com/favicon.ico",
               "description": "专业开发工具套件",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/www.jetbrains.com",
+              "effects": {}
             }
           ]
         },
         {
+          "id": "group_mr7mwzfv_vcask7",
+          "name": "社交媒体",
+          "color": "#dc3545",
+          "sites": [
+            {
+              "id": "site_mr7mwzfv_uopfdq",
+              "name": "微信网页版",
+              "url": "https://wx.qq.com",
+              "description": "微信网页版",
+              "icon": "https://icon.horse/icon/wx.qq.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_dwqhmc",
+              "name": "微博",
+              "url": "https://weibo.com",
+              "description": "新浪微博",
+              "icon": "https://weibo.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_58yhjg",
+              "name": "Twitter",
+              "url": "https://twitter.com",
+              "description": "推特社交平台",
+              "icon": "https://twitter.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_0dp2kk",
+              "name": "Facebook",
+              "url": "https://www.facebook.com",
+              "description": "脸书社交网络",
+              "icon": "https://www.facebook.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_b5qlqw",
+              "name": "LinkedIn",
+              "url": "https://www.linkedin.com",
+              "description": "职业社交网络",
+              "icon": "https://www.linkedin.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_c5wqiw",
+              "name": "Instagram",
+              "url": "https://www.instagram.com",
+              "description": "图片分享社交平台",
+              "icon": "https://icon.horse/icon/instagram.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_i90aac",
+              "name": "Reddit",
+              "url": "https://www.reddit.com",
+              "description": "社区讨论平台",
+              "icon": "https://www.reddit.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_ry5def",
+              "name": "Discord",
+              "url": "https://discord.com",
+              "description": "游戏社区聊天平台",
+              "icon": "https://faviconsnap.com/api/favicon?url=discord.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_rg6gjq",
+              "name": "TikTok",
+              "url": "https://www.tiktok.com",
+              "description": "短视频分享平台",
+              "icon": "https://www.tiktok.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_q8wmcm",
+              "name": "Snapchat",
+              "url": "https://www.snapchat.com",
+              "description": "阅后即焚社交应用",
+              "icon": "https://www.snapchat.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_bwqg0c",
+              "name": "Pinterest",
+              "url": "https://www.pinterest.com",
+              "description": "图片收藏分享平台",
+              "icon": "https://icon.horse/icon/pinterest.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_fb04h8",
+              "name": "Telegram",
+              "url": "https://web.telegram.org",
+              "description": "即时通讯应用",
+              "icon": "https://web.telegram.org/favicon.ico",
+              "effects": {}
+            }
+          ]
+        },
+        {
+          "id": "group_mr7mwzfv_2ku5te",
           "name": "新闻资讯",
           "color": "#fd7e14",
           "sites": [
             {
+              "id": "site_mr7mwzfv_unxtf7",
               "name": "新华网",
               "url": "http://www.xinhuanet.com",
-              "icon": "http://www.xinhuanet.com/favicon.ico",
               "description": "新华通讯社官网",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/xinhuanet.com",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_hq4dib",
               "name": "人民网",
               "url": "http://www.people.com.cn",
-              "icon": "http://www.people.com.cn/favicon.ico",
               "description": "人民日报官网",
-              "highlight": false,
-              "blink": false
+              "icon": "https://logo.clearbit.com/www.people.com.cn?size=128&format=png",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_kke5h6",
               "name": "BBC News",
               "url": "https://www.bbc.com/news",
-              "icon": "https://www.bbc.com/favicon.ico",
               "description": "英国广播公司新闻",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/bbc.com",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_r0714j",
               "name": "CNN",
               "url": "https://www.cnn.com",
-              "icon": "https://www.cnn.com/favicon.ico",
               "description": "美国有线电视新闻网",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.cnn.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_1jgqsv",
               "name": "36氪",
               "url": "https://36kr.com",
-              "icon": "https://36kr.com/favicon.ico",
               "description": "科技创业媒体",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/36kr.com",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_xf9gbd",
               "name": "The New York Times",
               "url": "https://www.nytimes.com",
-              "icon": "https://www.nytimes.com/favicon.ico",
               "description": "纽约时报",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.nytimes.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_b2g9pn",
               "name": "The Guardian",
               "url": "https://www.theguardian.com",
-              "icon": "https://www.theguardian.com/favicon.ico",
               "description": "英国卫报",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.theguardian.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_cnj2sl",
               "name": "Reuters",
               "url": "https://www.reuters.com",
-              "icon": "https://www.reuters.com/favicon.ico",
               "description": "路透社新闻",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.reuters.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_esoiv5",
               "name": "Associated Press",
               "url": "https://apnews.com",
-              "icon": "https://apnews.com/favicon.ico",
               "description": "美联社新闻",
-              "highlight": false,
-              "blink": false
+              "icon": "https://apnews.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_uuahvv",
               "name": "The Wall Street Journal",
               "url": "https://www.wsj.com",
-              "icon": "https://www.wsj.com/favicon.ico",
               "description": "华尔街日报",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.wsj.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_7q645s",
               "name": "Financial Times",
               "url": "https://www.ft.com",
-              "icon": "https://www.ft.com/favicon.ico",
               "description": "金融时报",
-              "highlight": false,
-              "blink": false
+              "icon": "https://faviconsnap.com/api/favicon?url=ft.com&size=128",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_jgsku2",
               "name": "Bloomberg",
               "url": "https://www.bloomberg.com",
-              "icon": "https://www.bloomberg.com/favicon.ico",
               "description": "彭博新闻",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.bloomberg.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_boknri",
               "name": "TechCrunch",
               "url": "https://techcrunch.com",
-              "icon": "https://techcrunch.com/favicon.ico",
               "description": "科技创业资讯",
-              "highlight": false,
-              "blink": false
+              "icon": "https://faviconsnap.com/api/favicon?url=techcrunch.com&size=128",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_kjve27",
               "name": "The Verge",
               "url": "https://www.theverge.com",
-              "icon": "https://www.theverge.com/favicon.ico",
               "description": "科技文化媒体",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.theverge.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_stpp68",
               "name": "Wired",
               "url": "https://www.wired.com",
-              "icon": "https://www.wired.com/favicon.ico",
               "description": "科技文化杂志",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.wired.com/favicon.ico",
+              "effects": {}
             }
           ]
         },
         {
+          "id": "group_mr7mwzfv_pk4rv8",
           "name": "在线工具",
           "color": "#20c997",
           "sites": [
             {
+              "id": "site_mr7mwzfv_f5nrk6",
               "name": "Google翻译",
               "url": "https://translate.google.com",
-              "icon": "https://translate.google.com/favicon.ico",
               "description": "在线翻译工具",
-              "highlight": false,
-              "blink": false
+              "icon": "https://translate.google.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_nwrmdw",
               "name": "百度翻译",
               "url": "https://fanyi.baidu.com",
-              "icon": "https://fanyi.baidu.com/favicon.ico",
               "description": "百度在线翻译",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/fanyi.baidu.com",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_pwxt6p",
               "name": "在线PS",
               "url": "https://www.photopea.com",
-              "icon": "https://www.photopea.com/favicon.ico",
               "description": "在线图片编辑器",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/photopea.com",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_088p1k",
               "name": "TinyPNG",
               "url": "https://tinypng.com",
-              "icon": "https://tinypng.com/favicon.ico",
               "description": "图片压缩工具",
-              "highlight": false,
-              "blink": false
+              "icon": "https://faviconsnap.com/api/favicon?url=tinypng.com&size=128",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_ukzatl",
               "name": "JSON格式化",
               "url": "https://jsonformatter.curiousconcept.com",
-              "icon": "https://jsonformatter.curiousconcept.com/favicon.ico",
               "description": "JSON在线格式化工具",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/jsonformatter.curiousconcept.com",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_pbmd8z",
               "name": "DeepL翻译",
               "url": "https://www.deepl.com/translator",
-              "icon": "https://www.deepl.com/favicon.ico",
               "description": "AI驱动的翻译工具",
-              "highlight": false,
-              "blink": false
+              "icon": "https://faviconsnap.com/api/favicon?url=deepl.com&size=128",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_xifa36",
               "name": "Grammarly",
               "url": "https://www.grammarly.com",
-              "icon": "https://www.grammarly.com/favicon.ico",
               "description": "英语语法检查工具",
-              "highlight": false,
-              "blink": false
+              "icon": "https://faviconsnap.com/api/favicon?url=grammarly.com&size=128",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_bs4loh",
               "name": "Canva",
               "url": "https://www.canva.com",
-              "icon": "https://www.canva.com/favicon.ico",
               "description": "在线设计平台",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.canva.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_39w6c9",
               "name": "Remove.bg",
               "url": "https://www.remove.bg",
-              "icon": "https://www.remove.bg/favicon.ico",
               "description": "AI自动抠图工具",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.remove.bg/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_q2wj7x",
               "name": "Unsplash",
               "url": "https://unsplash.com",
-              "icon": "https://unsplash.com/favicon.ico",
               "description": "免费高质量图片库",
-              "highlight": false,
-              "blink": false
+              "icon": "https://unsplash.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_hll2k5",
               "name": "Pexels",
               "url": "https://www.pexels.com",
-              "icon": "https://www.pexels.com/favicon.ico",
               "description": "免费图片和视频素材",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.pexels.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_cwfryp",
               "name": "Convertio",
               "url": "https://convertio.co",
-              "icon": "https://convertio.co/favicon.ico",
               "description": "在线文件格式转换",
-              "highlight": false,
-              "blink": false
+              "icon": "https://faviconsnap.com/api/favicon?url=convertio.co&size=128",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_w8vbwy",
               "name": "PDF24",
               "url": "https://tools.pdf24.org",
-              "icon": "https://tools.pdf24.org/favicon.ico",
               "description": "PDF在线工具集",
-              "highlight": false,
-              "blink": false
+              "icon": "https://tools.pdf24.org/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_wga312",
               "name": "Regex101",
               "url": "https://regex101.com",
-              "icon": "https://regex101.com/favicon.ico",
               "description": "正则表达式测试工具",
-              "highlight": false,
-              "blink": false
+              "icon": "https://faviconsnap.com/api/favicon?url=regex101.com&size=128",
+              "effects": {}
             }
           ]
         },
         {
+          "id": "group_mr7mwzfv_xd1psf",
           "name": "娱乐视频",
           "color": "#e83e8c",
           "sites": [
             {
+              "id": "site_mr7mwzfv_3ispwl",
               "name": "哔哩哔哩",
               "url": "https://www.bilibili.com",
-              "icon": "https://www.bilibili.com/favicon.ico",
               "description": "弹幕视频网站",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/www.bilibili.com",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_nhqpc5",
               "name": "YouTube",
               "url": "https://www.youtube.com",
-              "icon": "https://www.youtube.com/favicon.ico",
               "description": "全球视频分享平台",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/youtube.com",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_x5w7iu",
               "name": "爱奇艺",
               "url": "https://www.iqiyi.com",
-              "icon": "https://www.iqiyi.com/favicon.ico",
               "description": "在线视频平台",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.iqiyi.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_70bnt9",
               "name": "腾讯视频",
               "url": "https://v.qq.com",
-              "icon": "https://v.qq.com/favicon.ico",
               "description": "腾讯视频平台",
-              "highlight": false,
-              "blink": false
+              "icon": "https://v.qq.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_unpug9",
               "name": "网易云音乐",
               "url": "https://music.163.com",
-              "icon": "https://music.163.com/favicon.ico",
               "description": "在线音乐平台",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/music.163.com",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_r454tr",
               "name": "Netflix",
               "url": "https://www.netflix.com",
-              "icon": "https://www.netflix.com/favicon.ico",
               "description": "网飞流媒体平台",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.netflix.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_17hiji",
               "name": "Disney+",
               "url": "https://www.disneyplus.com",
-              "icon": "https://www.disneyplus.com/favicon.ico",
               "description": "迪士尼流媒体服务",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.disneyplus.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_2yilyi",
               "name": "Amazon Prime Video",
               "url": "https://www.primevideo.com",
-              "icon": "https://www.primevideo.com/favicon.ico",
               "description": "亚马逊视频服务",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/primevideo.com",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_fl30x7",
               "name": "Hulu",
               "url": "https://www.hulu.com",
-              "icon": "https://www.hulu.com/favicon.ico",
               "description": "Hulu流媒体平台",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.hulu.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_yxwjft",
               "name": "Spotify",
               "url": "https://www.spotify.com",
-              "icon": "https://www.spotify.com/favicon.ico",
               "description": "Spotify音乐流媒体",
-              "highlight": false,
-              "blink": false
+              "icon": "https://icon.horse/icon/www.spotify.com",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_m37f75",
               "name": "Apple Music",
               "url": "https://music.apple.com",
-              "icon": "https://music.apple.com/favicon.ico",
               "description": "苹果音乐服务",
-              "highlight": false,
-              "blink": false
+              "icon": "https://music.apple.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_f43gka",
               "name": "Twitch",
               "url": "https://www.twitch.tv",
-              "icon": "https://www.twitch.tv/favicon.ico",
               "description": "游戏直播平台",
-              "highlight": false,
-              "blink": false
+              "icon": "https://www.twitch.tv/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_5zzx1w",
               "name": "Vimeo",
               "url": "https://vimeo.com",
-              "icon": "https://vimeo.com/favicon.ico",
               "description": "高质量视频平台",
-              "highlight": false,
-              "blink": false
+              "icon": "https://vimeo.com/favicon.ico",
+              "effects": {}
             },
             {
+              "id": "site_mr7mwzfv_pvihtt",
               "name": "SoundCloud",
               "url": "https://soundcloud.com",
-              "icon": "https://soundcloud.com/favicon.ico",
               "description": "音频分享平台",
-              "highlight": false,
-              "blink": false
+              "icon": "https://faviconsnap.com/api/favicon?url=soundcloud.com&size=128",
+              "effects": {}
             }
           ]
         },
-         {
-           "name": "电商购物",
-           "color": "#ffc107",
-           "sites": [
-             {
-               "name": "淘宝",
-               "url": "https://www.taobao.com",
-               "icon": "https://www.taobao.com/favicon.ico",
-               "description": "阿里巴巴购物平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "京东",
-               "url": "https://www.jd.com",
-               "icon": "https://www.jd.com/favicon.ico",
-               "description": "京东商城",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "天猫",
-               "url": "https://www.tmall.com",
-               "icon": "https://www.tmall.com/favicon.ico",
-               "description": "天猫商城",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Amazon",
-               "url": "https://www.amazon.com",
-               "icon": "https://www.amazon.com/favicon.ico",
-               "description": "亚马逊购物",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "拼多多",
-               "url": "https://www.pinduoduo.com",
-               "icon": "https://www.pinduoduo.com/favicon.ico",
-               "description": "拼团购物平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "苏宁易购",
-               "url": "https://www.suning.com",
-               "icon": "https://www.suning.com/favicon.ico",
-               "description": "苏宁电商平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "唯品会",
-               "url": "https://www.vip.com",
-               "icon": "https://www.vip.com/favicon.ico",
-               "description": "品牌特卖网站",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "eBay",
-               "url": "https://www.ebay.com",
-               "icon": "https://www.ebay.com/favicon.ico",
-               "description": "全球在线拍卖平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Etsy",
-               "url": "https://www.etsy.com",
-               "icon": "https://www.etsy.com/favicon.ico",
-               "description": "手工艺品交易平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "AliExpress",
-               "url": "https://www.aliexpress.com",
-               "icon": "https://www.aliexpress.com/favicon.ico",
-               "description": "阿里巴巴全球速卖通",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Walmart",
-               "url": "https://www.walmart.com",
-               "icon": "https://www.walmart.com/favicon.ico",
-               "description": "沃尔玛在线商城",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Target",
-               "url": "https://www.target.com",
-               "icon": "https://www.target.com/favicon.ico",
-               "description": "塔吉特百货",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Best Buy",
-               "url": "https://www.bestbuy.com",
-               "icon": "https://www.bestbuy.com/favicon.ico",
-               "description": "百思买电子产品",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Shopify",
-               "url": "https://www.shopify.com",
-               "icon": "https://www.shopify.com/favicon.ico",
-               "description": "电商建站平台",
-               "highlight": false,
-               "blink": false
-             }
-           ]
-         },
-         {
-           "name": "学习教育",
-           "color": "#17a2b8",
-           "sites": [
-             {
-               "name": "中国大学MOOC",
-               "url": "https://www.icourse163.org",
-               "icon": "https://www.icourse163.org/favicon.ico",
-               "description": "在线教育平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "学堂在线",
-               "url": "https://www.xuetangx.com",
-               "icon": "https://www.xuetangx.com/favicon.ico",
-               "description": "清华大学在线教育平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Coursera",
-               "url": "https://www.coursera.org",
-               "icon": "https://www.coursera.org/favicon.ico",
-               "description": "国际在线课程平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "edX",
-               "url": "https://www.edx.org",
-               "icon": "https://www.edx.org/favicon.ico",
-               "description": "哈佛MIT在线教育",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "知乎",
-               "url": "https://www.zhihu.com",
-               "icon": "https://www.zhihu.com/favicon.ico",
-               "description": "知识问答社区",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "慕课网",
-               "url": "https://www.imooc.com",
-               "icon": "https://www.imooc.com/favicon.ico",
-               "description": "IT技能学习平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Udemy",
-               "url": "https://www.udemy.com",
-               "icon": "https://www.udemy.com/favicon.ico",
-               "description": "在线技能学习平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Khan Academy",
-               "url": "https://www.khanacademy.org",
-               "icon": "https://www.khanacademy.org/favicon.ico",
-               "description": "免费在线教育平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Pluralsight",
-               "url": "https://www.pluralsight.com",
-               "icon": "https://www.pluralsight.com/favicon.ico",
-               "description": "技术技能培训平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "LinkedIn Learning",
-               "url": "https://www.linkedin.com/learning",
-               "icon": "https://www.linkedin.com/favicon.ico",
-               "description": "职业技能学习平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Codecademy",
-               "url": "https://www.codecademy.com",
-               "icon": "https://www.codecademy.com/favicon.ico",
-               "description": "编程学习平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "FreeCodeCamp",
-               "url": "https://www.freecodecamp.org",
-               "icon": "https://www.freecodecamp.org/favicon.ico",
-               "description": "免费编程学习平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Duolingo",
-               "url": "https://www.duolingo.com",
-               "icon": "https://www.duolingo.com/favicon.ico",
-               "description": "语言学习应用",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "TED",
-               "url": "https://www.ted.com",
-               "icon": "https://www.ted.com/favicon.ico",
-               "description": "思想传播平台",
-               "highlight": false,
-               "blink": false
-             }
-           ]
-         },
-         {
-           "name": "金融理财",
-           "color": "#28a745",
-           "sites": [
-             {
-               "name": "支付宝",
-               "url": "https://www.alipay.com",
-               "icon": "https://www.alipay.com/favicon.ico",
-               "description": "蚂蚁金服支付平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "微信支付",
-               "url": "https://pay.weixin.qq.com",
-               "icon": "https://pay.weixin.qq.com/favicon.ico",
-               "description": "腾讯支付服务",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "中国银行",
-               "url": "https://www.boc.cn",
-               "icon": "https://www.boc.cn/favicon.ico",
-               "description": "中国银行官网",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "工商银行",
-               "url": "https://www.icbc.com.cn",
-               "icon": "https://www.icbc.com.cn/favicon.ico",
-               "description": "中国工商银行",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "招商银行",
-               "url": "https://www.cmbchina.com",
-               "icon": "https://www.cmbchina.com/favicon.ico",
-               "description": "招商银行官网",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "余额宝",
-               "url": "https://www.antfin.com",
-               "icon": "https://www.antfin.com/favicon.ico",
-               "description": "蚂蚁金服理财产品",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "PayPal",
-               "url": "https://www.paypal.com",
-               "icon": "https://www.paypal.com/favicon.ico",
-               "description": "国际在线支付平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Stripe",
-               "url": "https://stripe.com",
-               "icon": "https://stripe.com/favicon.ico",
-               "description": "在线支付处理平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Coinbase",
-               "url": "https://www.coinbase.com",
-               "icon": "https://www.coinbase.com/favicon.ico",
-               "description": "数字货币交易平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Binance",
-               "url": "https://www.binance.com",
-               "icon": "https://www.binance.com/favicon.ico",
-               "description": "全球数字货币交易所",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Robinhood",
-               "url": "https://robinhood.com",
-               "icon": "https://robinhood.com/favicon.ico",
-               "description": "免佣金股票交易平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "E*TRADE",
-               "url": "https://us.etrade.com",
-               "icon": "https://us.etrade.com/favicon.ico",
-               "description": "在线投资交易平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Charles Schwab",
-               "url": "https://www.schwab.com",
-               "icon": "https://www.schwab.com/favicon.ico",
-               "description": "投资理财服务",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Mint",
-               "url": "https://mint.intuit.com",
-               "icon": "https://mint.intuit.com/favicon.ico",
-               "description": "个人财务管理工具",
-               "highlight": false,
-               "blink": false
-             }
-           ]
-         },
-         {
-           "name": "生活服务",
-           "color": "#fd7e14",
-           "sites": [
-             {
-               "name": "美团",
-               "url": "https://www.meituan.com",
-               "icon": "https://www.meituan.com/favicon.ico",
-               "description": "生活服务平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "饿了么",
-               "url": "https://www.ele.me",
-               "icon": "https://www.ele.me/favicon.ico",
-               "description": "外卖订餐平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "滴滴出行",
-               "url": "https://www.didiglobal.com",
-               "icon": "https://www.didiglobal.com/favicon.ico",
-               "description": "网约车服务",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "12306",
-               "url": "https://www.12306.cn",
-               "icon": "https://www.12306.cn/favicon.ico",
-               "description": "中国铁路客户服务中心",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "携程",
-               "url": "https://www.ctrip.com",
-               "icon": "https://www.ctrip.com/favicon.ico",
-               "description": "在线旅行服务",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "去哪儿",
-               "url": "https://www.qunar.com",
-               "icon": "https://www.qunar.com/favicon.ico",
-               "description": "旅游搜索引擎",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "58同城",
-               "url": "https://www.58.com",
-               "icon": "https://www.58.com/favicon.ico",
-               "description": "分类信息网站",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Uber",
-               "url": "https://www.uber.com",
-               "icon": "https://www.uber.com/favicon.ico",
-               "description": "国际网约车服务",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Lyft",
-               "url": "https://www.lyft.com",
-               "icon": "https://www.lyft.com/favicon.ico",
-               "description": "美国网约车平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "DoorDash",
-               "url": "https://www.doordash.com",
-               "icon": "https://www.doordash.com/favicon.ico",
-               "description": "美国外卖配送平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Grubhub",
-               "url": "https://www.grubhub.com",
-               "icon": "https://www.grubhub.com/favicon.ico",
-               "description": "在线外卖订餐服务",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Airbnb",
-               "url": "https://www.airbnb.com",
-               "icon": "https://www.airbnb.com/favicon.ico",
-               "description": "民宿短租平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Booking.com",
-               "url": "https://www.booking.com",
-               "icon": "https://www.booking.com/favicon.ico",
-               "description": "全球酒店预订平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Expedia",
-               "url": "https://www.expedia.com",
-               "icon": "https://www.expedia.com/favicon.ico",
-               "description": "在线旅行预订服务",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Yelp",
-               "url": "https://www.yelp.com",
-               "icon": "https://www.yelp.com/favicon.ico",
-               "description": "本地商户点评平台",
-               "highlight": false,
-               "blink": false
-             }
-           ]
-         },
-         {
-           "name": "办公效率",
-           "color": "#6c757d",
-           "sites": [
-             {
-               "name": "腾讯文档",
-               "url": "https://docs.qq.com",
-               "icon": "https://docs.qq.com/favicon.ico",
-               "description": "在线协作文档",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "石墨文档",
-               "url": "https://shimo.im",
-               "icon": "https://shimo.im/favicon.ico",
-               "description": "协作文档和表格",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "飞书",
-               "url": "https://www.feishu.cn",
-               "icon": "https://www.feishu.cn/favicon.ico",
-               "description": "字节跳动办公套件",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "钉钉",
-               "url": "https://www.dingtalk.com",
-               "icon": "https://www.dingtalk.com/favicon.ico",
-               "description": "阿里巴巴企业通讯",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "企业微信",
-               "url": "https://work.weixin.qq.com",
-               "icon": "https://work.weixin.qq.com/favicon.ico",
-               "description": "腾讯企业通讯工具",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Notion",
-               "url": "https://www.notion.so",
-               "icon": "https://www.notion.so/favicon.ico",
-               "description": "全能工作空间",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Google Docs",
-               "url": "https://docs.google.com",
-               "icon": "https://docs.google.com/favicon.ico",
-               "description": "Google在线文档",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Microsoft 365",
-               "url": "https://www.office.com",
-               "icon": "https://www.office.com/favicon.ico",
-               "description": "微软在线办公套件",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Slack",
-               "url": "https://slack.com",
-               "icon": "https://slack.com/favicon.ico",
-               "description": "团队协作通讯工具",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Trello",
-               "url": "https://trello.com",
-               "icon": "https://trello.com/favicon.ico",
-               "description": "项目管理看板工具",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Asana",
-               "url": "https://asana.com",
-               "icon": "https://asana.com/favicon.ico",
-               "description": "团队项目管理平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Monday.com",
-               "url": "https://monday.com",
-               "icon": "https://monday.com/favicon.ico",
-               "description": "工作管理平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Jira",
-               "url": "https://www.atlassian.com/software/jira",
-               "icon": "https://www.atlassian.com/favicon.ico",
-               "description": "敏捷项目管理工具",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Confluence",
-               "url": "https://www.atlassian.com/software/confluence",
-               "icon": "https://www.atlassian.com/favicon.ico",
-               "description": "团队协作知识库",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Zoom",
-               "url": "https://zoom.us",
-               "icon": "https://zoom.us/favicon.ico",
-               "description": "视频会议平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Microsoft Teams",
-               "url": "https://teams.microsoft.com",
-               "icon": "https://teams.microsoft.com/favicon.ico",
-               "description": "微软团队协作平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Dropbox",
-               "url": "https://www.dropbox.com",
-               "icon": "https://www.dropbox.com/favicon.ico",
-               "description": "云存储服务",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Figma",
-               "url": "https://www.figma.com",
-               "icon": "https://www.figma.com/favicon.ico",
-               "description": "协作设计工具",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Miro",
-               "url": "https://miro.com",
-               "icon": "https://miro.com/favicon.ico",
-               "description": "在线白板协作工具",
-               "highlight": false,
-               "blink": false
-             }
-           ]
-         },
-         {
-           "name": "国际媒体",
-           "color": "#dc3545",
-           "sites": [
-             {
-               "name": "The New York Times",
-               "url": "https://www.nytimes.com",
-               "icon": "https://www.nytimes.com/favicon.ico",
-               "description": "纽约时报",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "The Guardian",
-               "url": "https://www.theguardian.com",
-               "icon": "https://www.theguardian.com/favicon.ico",
-               "description": "英国卫报",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Reuters",
-               "url": "https://www.reuters.com",
-               "icon": "https://www.reuters.com/favicon.ico",
-               "description": "路透社新闻",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Associated Press",
-               "url": "https://apnews.com",
-               "icon": "https://apnews.com/favicon.ico",
-               "description": "美联社新闻",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "The Wall Street Journal",
-               "url": "https://www.wsj.com",
-               "icon": "https://www.wsj.com/favicon.ico",
-               "description": "华尔街日报",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Financial Times",
-               "url": "https://www.ft.com",
-               "icon": "https://www.ft.com/favicon.ico",
-               "description": "金融时报",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Bloomberg",
-               "url": "https://www.bloomberg.com",
-               "icon": "https://www.bloomberg.com/favicon.ico",
-               "description": "彭博新闻",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "TechCrunch",
-               "url": "https://techcrunch.com",
-               "icon": "https://techcrunch.com/favicon.ico",
-               "description": "科技创业资讯",
-               "highlight": false,
-               "blink": false
-             }
-           ]
-         },
-         {
-           "name": "设计创意",
-           "color": "#e83e8c",
-           "sites": [
-             {
-               "name": "Dribbble",
-               "url": "https://dribbble.com",
-               "icon": "https://dribbble.com/favicon.ico",
-               "description": "设计师作品展示平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Behance",
-               "url": "https://www.behance.net",
-               "icon": "https://www.behance.net/favicon.ico",
-               "description": "Adobe创意作品平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Figma",
-               "url": "https://www.figma.com",
-               "icon": "https://www.figma.com/favicon.ico",
-               "description": "协作设计工具",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Canva",
-               "url": "https://www.canva.com",
-               "icon": "https://www.canva.com/favicon.ico",
-               "description": "在线设计平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Unsplash",
-               "url": "https://unsplash.com",
-               "icon": "https://unsplash.com/favicon.ico",
-               "description": "免费高质量图片库",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Pexels",
-               "url": "https://www.pexels.com",
-               "icon": "https://www.pexels.com/favicon.ico",
-               "description": "免费图片和视频素材",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Adobe Creative Cloud",
-               "url": "https://www.adobe.com",
-               "icon": "https://www.adobe.com/favicon.ico",
-               "description": "Adobe创意软件套件",
-               "highlight": false,
-               "blink": false
-             }
-           ]
-         },
-         {
-           "name": "云服务平台",
-           "color": "#20c997",
-           "sites": [
-             {
-               "name": "Amazon AWS",
-               "url": "https://aws.amazon.com",
-               "icon": "https://aws.amazon.com/favicon.ico",
-               "description": "亚马逊云服务",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Microsoft Azure",
-               "url": "https://azure.microsoft.com",
-               "icon": "https://azure.microsoft.com/favicon.ico",
-               "description": "微软云平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Google Cloud",
-               "url": "https://cloud.google.com",
-               "icon": "https://cloud.google.com/favicon.ico",
-               "description": "谷歌云平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "DigitalOcean",
-               "url": "https://www.digitalocean.com",
-               "icon": "https://www.digitalocean.com/favicon.ico",
-               "description": "开发者云平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Heroku",
-               "url": "https://www.heroku.com",
-               "icon": "https://www.heroku.com/favicon.ico",
-               "description": "应用部署平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Vercel",
-               "url": "https://vercel.com",
-               "icon": "https://vercel.com/favicon.ico",
-               "description": "前端部署平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Netlify",
-               "url": "https://www.netlify.com",
-               "icon": "https://www.netlify.com/favicon.ico",
-               "description": "静态网站托管平台",
-               "highlight": false,
-               "blink": false
-             }
-           ]
-         },
-         {
-           "name": "国际电商",
-           "color": "#ffc107",
-           "sites": [
-             {
-               "name": "eBay",
-               "url": "https://www.ebay.com",
-               "icon": "https://www.ebay.com/favicon.ico",
-               "description": "全球在线拍卖平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Etsy",
-               "url": "https://www.etsy.com",
-               "icon": "https://www.etsy.com/favicon.ico",
-               "description": "手工艺品交易平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Shopify",
-               "url": "https://www.shopify.com",
-               "icon": "https://www.shopify.com/favicon.ico",
-               "description": "电商建站平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "AliExpress",
-               "url": "https://www.aliexpress.com",
-               "icon": "https://www.aliexpress.com/favicon.ico",
-               "description": "阿里巴巴全球速卖通",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Walmart",
-               "url": "https://www.walmart.com",
-               "icon": "https://www.walmart.com/favicon.ico",
-               "description": "沃尔玛在线商城",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Target",
-               "url": "https://www.target.com",
-               "icon": "https://www.target.com/favicon.ico",
-               "description": "塔吉特百货",
-               "highlight": false,
-               "blink": false
-             }
-           ]
-         },
-         {
-           "name": "流媒体娱乐",
-           "color": "#6f42c1",
-           "sites": [
-             {
-               "name": "Netflix",
-               "url": "https://www.netflix.com",
-               "icon": "https://www.netflix.com/favicon.ico",
-               "description": "网飞流媒体平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Disney+",
-               "url": "https://www.disneyplus.com",
-               "icon": "https://www.disneyplus.com/favicon.ico",
-               "description": "迪士尼流媒体服务",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Amazon Prime Video",
-               "url": "https://www.primevideo.com",
-               "icon": "https://www.primevideo.com/favicon.ico",
-               "description": "亚马逊视频服务",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Hulu",
-               "url": "https://www.hulu.com",
-               "icon": "https://www.hulu.com/favicon.ico",
-               "description": "Hulu流媒体平台",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Spotify",
-               "url": "https://www.spotify.com",
-               "icon": "https://www.spotify.com/favicon.ico",
-               "description": "Spotify音乐流媒体",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Apple Music",
-               "url": "https://music.apple.com",
-               "icon": "https://music.apple.com/favicon.ico",
-               "description": "苹果音乐服务",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Twitch",
-               "url": "https://www.twitch.tv",
-               "icon": "https://www.twitch.tv/favicon.ico",
-               "description": "游戏直播平台",
-               "highlight": false,
-               "blink": false
-             }
-           ]
-         },
-         {
-           "name": "参考工具",
-           "color": "#17a2b8",
-           "sites": [
-             {
-               "name": "Wikipedia",
-               "url": "https://www.wikipedia.org",
-               "icon": "https://www.wikipedia.org/favicon.ico",
-               "description": "维基百科",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Wolfram Alpha",
-               "url": "https://www.wolframalpha.com",
-               "icon": "https://www.wolframalpha.com/favicon.ico",
-               "description": "计算知识引擎",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Dictionary.com",
-               "url": "https://www.dictionary.com",
-               "icon": "https://www.dictionary.com/favicon.ico",
-               "description": "在线英语词典",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Merriam-Webster",
-               "url": "https://www.merriam-webster.com",
-               "icon": "https://www.merriam-webster.com/favicon.ico",
-               "description": "韦氏词典",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Grammarly",
-               "url": "https://www.grammarly.com",
-               "icon": "https://www.grammarly.com/favicon.ico",
-               "description": "英语语法检查工具",
-               "highlight": false,
-               "blink": false
-             },
-             {
-               "name": "Thesaurus.com",
-               "url": "https://www.thesaurus.com",
-               "icon": "https://www.thesaurus.com/favicon.ico",
-               "description": "英语同义词词典",
-               "highlight": false,
-               "blink": false
-             }
-           ]
-         }
+        {
+          "id": "group_mr7mwzfv_6pdnte",
+          "name": "电商购物",
+          "color": "#ffc107",
+          "sites": [
+            {
+              "id": "site_mr7mwzfv_x0a99c",
+              "name": "淘宝",
+              "url": "https://www.taobao.com",
+              "description": "阿里巴巴购物平台",
+              "icon": "https://www.taobao.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_r4iqm1",
+              "name": "京东",
+              "url": "https://www.jd.com",
+              "description": "京东商城",
+              "icon": "https://icon.horse/icon/www.jd.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_rfqltm",
+              "name": "天猫",
+              "url": "https://www.tmall.com",
+              "description": "天猫商城",
+              "icon": "https://www.tmall.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_rw4qii",
+              "name": "Amazon",
+              "url": "https://www.amazon.com",
+              "description": "亚马逊购物",
+              "icon": "https://www.amazon.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_4gbzxo",
+              "name": "拼多多",
+              "url": "https://www.pinduoduo.com",
+              "description": "拼团购物平台",
+              "icon": "https://icon.horse/icon/www.pinduoduo.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_h0kuy6",
+              "name": "苏宁易购",
+              "url": "https://www.suning.com",
+              "description": "苏宁电商平台",
+              "icon": "https://www.suning.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_ca58p0",
+              "name": "唯品会",
+              "url": "https://www.vip.com",
+              "description": "品牌特卖网站",
+              "icon": "https://www.vip.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_m01b6z",
+              "name": "eBay",
+              "url": "https://www.ebay.com",
+              "description": "全球在线拍卖平台",
+              "icon": "https://faviconsnap.com/api/favicon?url=ebay.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_54bj00",
+              "name": "Etsy",
+              "url": "https://www.etsy.com",
+              "description": "手工艺品交易平台",
+              "icon": "https://www.etsy.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_9fg8q7",
+              "name": "AliExpress",
+              "url": "https://www.aliexpress.com",
+              "description": "阿里巴巴全球速卖通",
+              "icon": "https://www.aliexpress.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_7mui8e",
+              "name": "Walmart",
+              "url": "https://www.walmart.com",
+              "description": "沃尔玛在线商城",
+              "icon": "https://www.walmart.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_pujnkj",
+              "name": "Target",
+              "url": "https://www.target.com",
+              "description": "塔吉特百货",
+              "icon": "https://faviconsnap.com/api/favicon?url=target.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_8vgoqf",
+              "name": "Best Buy",
+              "url": "https://www.bestbuy.com",
+              "description": "百思买电子产品",
+              "icon": "https://faviconsnap.com/api/favicon?url=bestbuy.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_r9g8v8",
+              "name": "Shopify",
+              "url": "https://www.shopify.com",
+              "description": "电商建站平台",
+              "icon": "https://www.shopify.com/favicon.ico",
+              "effects": {}
+            }
+          ]
+        },
+        {
+          "id": "group_mr7mwzfv_yhnzha",
+          "name": "学习教育",
+          "color": "#17a2b8",
+          "sites": [
+            {
+              "id": "site_mr7mwzfv_f2ljp7",
+              "name": "中国大学MOOC",
+              "url": "https://www.icourse163.org",
+              "description": "在线教育平台",
+              "icon": "https://icon.horse/icon/icourse163.org",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_6jvr99",
+              "name": "学堂在线",
+              "url": "https://www.xuetangx.com",
+              "description": "清华大学在线教育平台",
+              "icon": "https://icon.horse/icon/xuetangx.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_rw01g8",
+              "name": "Coursera",
+              "url": "https://www.coursera.org",
+              "description": "国际在线课程平台",
+              "icon": "https://www.coursera.org/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_3ud5yn",
+              "name": "edX",
+              "url": "https://www.edx.org",
+              "description": "哈佛MIT在线教育",
+              "icon": "https://www.edx.org/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_5nqcsh",
+              "name": "知乎",
+              "url": "https://www.zhihu.com",
+              "description": "知识问答社区",
+              "icon": "https://www.zhihu.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_c9nk2k",
+              "name": "慕课网",
+              "url": "https://www.imooc.com",
+              "description": "IT技能学习平台",
+              "icon": "https://www.imooc.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_tfrdx2",
+              "name": "Udemy",
+              "url": "https://www.udemy.com",
+              "description": "在线技能学习平台",
+              "icon": "https://faviconsnap.com/api/favicon?url=udemy.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_wjs5if",
+              "name": "Khan Academy",
+              "url": "https://www.khanacademy.org",
+              "description": "免费在线教育平台",
+              "icon": "https://www.khanacademy.org/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_o4ae8v",
+              "name": "Pluralsight",
+              "url": "https://www.pluralsight.com",
+              "description": "技术技能培训平台",
+              "icon": "https://faviconsnap.com/api/favicon?url=pluralsight.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_9545s0",
+              "name": "LinkedIn Learning",
+              "url": "https://www.linkedin.com/learning",
+              "description": "职业技能学习平台",
+              "icon": "https://www.linkedin.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_xr1qwi",
+              "name": "Codecademy",
+              "url": "https://www.codecademy.com",
+              "description": "编程学习平台",
+              "icon": "https://www.codecademy.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_88yerc",
+              "name": "FreeCodeCamp",
+              "url": "https://www.freecodecamp.org",
+              "description": "免费编程学习平台",
+              "icon": "https://faviconsnap.com/api/favicon?url=freecodecamp.org&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_ljljod",
+              "name": "Duolingo",
+              "url": "https://www.duolingo.com",
+              "description": "语言学习应用",
+              "icon": "https://icon.horse/icon/duolingo.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_l0evgv",
+              "name": "TED",
+              "url": "https://www.ted.com",
+              "description": "思想传播平台",
+              "icon": "https://faviconsnap.com/api/favicon?url=ted.com&size=128",
+              "effects": {}
+            }
+          ]
+        },
+        {
+          "id": "group_mr7mwzfv_25gjft",
+          "name": "金融理财",
+          "color": "#28a745",
+          "sites": [
+            {
+              "id": "site_mr7mwzfv_mjue9i",
+              "name": "支付宝",
+              "url": "https://www.alipay.com",
+              "description": "蚂蚁金服支付平台",
+              "icon": "https://www.alipay.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_ar2yye",
+              "name": "微信支付",
+              "url": "https://pay.weixin.qq.com",
+              "description": "腾讯支付服务",
+              "icon": "https://icon.horse/icon/pay.weixin.qq.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_t9lr06",
+              "name": "中国银行",
+              "url": "https://www.boc.cn",
+              "description": "中国银行官网",
+              "icon": "https://favicon.yandex.net/favicon/www.boc.cn",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_8fou55",
+              "name": "工商银行",
+              "url": "https://www.icbc.com.cn",
+              "description": "中国工商银行",
+              "icon": "https://icon.horse/icon/www.icbc.com.cn",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_u9aebu",
+              "name": "招商银行",
+              "url": "https://www.cmbchina.com",
+              "description": "招商银行官网",
+              "icon": "https://icon.horse/icon/cmbchina.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_ka2bjh",
+              "name": "余额宝",
+              "url": "https://www.antfin.com",
+              "description": "蚂蚁金服理财产品",
+              "icon": "https://icon.horse/icon/www.antfin.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_8jzpwb",
+              "name": "PayPal",
+              "url": "https://www.paypal.com",
+              "description": "国际在线支付平台",
+              "icon": "https://faviconsnap.com/api/favicon?url=paypal.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_vg2snk",
+              "name": "Stripe",
+              "url": "https://stripe.com",
+              "description": "在线支付处理平台",
+              "icon": "https://stripe.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_ttjcdq",
+              "name": "Coinbase",
+              "url": "https://www.coinbase.com",
+              "description": "数字货币交易平台",
+              "icon": "https://www.coinbase.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_jc1ebg",
+              "name": "Binance",
+              "url": "https://www.binance.com",
+              "description": "全球数字货币交易所",
+              "icon": "https://faviconsnap.com/api/favicon?url=binance.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_d1wzuf",
+              "name": "Robinhood",
+              "url": "https://robinhood.com",
+              "description": "免佣金股票交易平台",
+              "icon": "https://robinhood.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_og7hid",
+              "name": "E*TRADE",
+              "url": "https://us.etrade.com",
+              "description": "在线投资交易平台",
+              "icon": "https://us.etrade.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_4l4aq4",
+              "name": "Charles Schwab",
+              "url": "https://www.schwab.com",
+              "description": "投资理财服务",
+              "icon": "https://faviconsnap.com/api/favicon?url=schwab.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_17z0ib",
+              "name": "Mint",
+              "url": "https://mint.intuit.com",
+              "description": "个人财务管理工具",
+              "icon": "https://mint.intuit.com/favicon.ico",
+              "effects": {}
+            }
+          ]
+        },
+        {
+          "id": "group_mr7mwzfv_z4hr4q",
+          "name": "生活服务",
+          "color": "#fd7e14",
+          "sites": [
+            {
+              "id": "site_mr7mwzfv_m5gxrp",
+              "name": "美团",
+              "url": "https://www.meituan.com",
+              "description": "生活服务平台",
+              "icon": "https://www.meituan.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_q3jca0",
+              "name": "饿了么",
+              "url": "https://www.ele.me",
+              "description": "外卖订餐平台",
+              "icon": "https://www.ele.me/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_daa7rr",
+              "name": "滴滴出行",
+              "url": "https://www.didiglobal.com",
+              "description": "网约车服务",
+              "icon": "https://icon.horse/icon/didiglobal.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_hh0yqv",
+              "name": "12306",
+              "url": "https://www.12306.cn",
+              "description": "中国铁路客户服务中心",
+              "icon": "https://favicon.yandex.net/favicon/12306.cn",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_2f4pdl",
+              "name": "携程",
+              "url": "https://www.ctrip.com",
+              "description": "在线旅行服务",
+              "icon": "https://icon.horse/icon/ctrip.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_ugzn8y",
+              "name": "去哪儿",
+              "url": "https://www.qunar.com",
+              "description": "旅游搜索引擎",
+              "icon": "https://favicon.yandex.net/favicon/www.qunar.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_t60ruo",
+              "name": "58同城",
+              "url": "https://www.58.com",
+              "description": "分类信息网站",
+              "icon": "https://www.58.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_66ghem",
+              "name": "Uber",
+              "url": "https://www.uber.com",
+              "description": "国际网约车服务",
+              "icon": "https://www.uber.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_d2h6wr",
+              "name": "Lyft",
+              "url": "https://www.lyft.com",
+              "description": "美国网约车平台",
+              "icon": "https://icon.horse/icon/lyft.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_l1dmec",
+              "name": "DoorDash",
+              "url": "https://www.doordash.com",
+              "description": "美国外卖配送平台",
+              "icon": "https://favicon.yandex.net/favicon/doordash.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_09pfqw",
+              "name": "Grubhub",
+              "url": "https://www.grubhub.com",
+              "description": "在线外卖订餐服务",
+              "icon": "https://icon.horse/icon/grubhub.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_cga3hd",
+              "name": "Airbnb",
+              "url": "https://www.airbnb.com",
+              "description": "民宿短租平台",
+              "icon": "https://www.airbnb.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_6dmk9y",
+              "name": "Booking.com",
+              "url": "https://www.booking.com",
+              "description": "全球酒店预订平台",
+              "icon": "https://favicon.yandex.net/favicon/booking.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_4t02bv",
+              "name": "Expedia",
+              "url": "https://www.expedia.com",
+              "description": "在线旅行预订服务",
+              "icon": "https://www.expedia.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_tq37yc",
+              "name": "Yelp",
+              "url": "https://www.yelp.com",
+              "description": "本地商户点评平台",
+              "icon": "https://www.yelp.com/favicon.ico",
+              "effects": {}
+            }
+          ]
+        },
+        {
+          "id": "group_mr7mwzfv_yzs080",
+          "name": "办公效率",
+          "color": "#6c757d",
+          "sites": [
+            {
+              "id": "site_mr7mwzfv_v469gi",
+              "name": "腾讯文档",
+              "url": "https://docs.qq.com",
+              "description": "在线协作文档",
+              "icon": "https://faviconsnap.com/api/favicon?url=docs.qq.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_pa0d6a",
+              "name": "石墨文档",
+              "url": "https://shimo.im",
+              "description": "协作文档和表格",
+              "icon": "https://shimo.im/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_pipxg1",
+              "name": "飞书",
+              "url": "https://www.feishu.cn",
+              "description": "字节跳动办公套件",
+              "icon": "https://www.feishu.cn/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_xmkkih",
+              "name": "钉钉",
+              "url": "https://www.dingtalk.com",
+              "description": "阿里巴巴企业通讯",
+              "icon": "https://icon.horse/icon/www.dingtalk.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_5plkpx",
+              "name": "企业微信",
+              "url": "https://work.weixin.qq.com",
+              "description": "腾讯企业通讯工具",
+              "icon": "https://work.weixin.qq.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_ouv353",
+              "name": "Notion",
+              "url": "https://www.notion.so",
+              "description": "全能工作空间",
+              "icon": "https://icon.horse/icon/notion.so",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_y2lmg6",
+              "name": "Google Docs",
+              "url": "https://docs.google.com",
+              "description": "Google在线文档",
+              "icon": "https://docs.google.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_ik8civ",
+              "name": "Microsoft 365",
+              "url": "https://www.office.com",
+              "description": "微软在线办公套件",
+              "icon": "https://icon.horse/icon/office.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_eag4f9",
+              "name": "Slack",
+              "url": "https://slack.com",
+              "description": "团队协作通讯工具",
+              "icon": "https://slack.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_4e8ngb",
+              "name": "Trello",
+              "url": "https://trello.com",
+              "description": "项目管理看板工具",
+              "icon": "https://icon.horse/icon/trello.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_sxu4o0",
+              "name": "Asana",
+              "url": "https://asana.com",
+              "description": "团队项目管理平台",
+              "icon": "https://asana.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_19jqie",
+              "name": "Monday.com",
+              "url": "https://monday.com",
+              "description": "工作管理平台",
+              "icon": "https://icon.horse/icon/monday.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_zhmdli",
+              "name": "Jira",
+              "url": "https://www.atlassian.com/software/jira",
+              "description": "敏捷项目管理工具",
+              "icon": "https://www.atlassian.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_ar8acv",
+              "name": "Confluence",
+              "url": "https://www.atlassian.com/software/confluence",
+              "description": "团队协作知识库",
+              "icon": "https://www.atlassian.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_9rluk2",
+              "name": "Zoom",
+              "url": "https://zoom.us",
+              "description": "视频会议平台",
+              "icon": "https://zoom.us/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_pumvhl",
+              "name": "Microsoft Teams",
+              "url": "https://teams.microsoft.com",
+              "description": "微软团队协作平台",
+              "icon": "https://teams.microsoft.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_8pq3bj",
+              "name": "Dropbox",
+              "url": "https://www.dropbox.com",
+              "description": "云存储服务",
+              "icon": "https://faviconsnap.com/api/favicon?url=dropbox.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_fi5fom",
+              "name": "Figma",
+              "url": "https://www.figma.com",
+              "description": "协作设计工具",
+              "icon": "https://faviconsnap.com/api/favicon?url=figma.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_4zv2jq",
+              "name": "Miro",
+              "url": "https://miro.com",
+              "description": "在线白板协作工具",
+              "icon": "https://faviconsnap.com/api/favicon?url=miro.com&size=128",
+              "effects": {}
+            }
+          ]
+        },
+        {
+          "id": "group_mr7mwzfv_ufkgu7",
+          "name": "国际媒体",
+          "color": "#dc3545",
+          "sites": [
+            {
+              "id": "site_mr7mwzfv_i6yzla",
+              "name": "The New York Times",
+              "url": "https://www.nytimes.com",
+              "description": "纽约时报",
+              "icon": "https://www.nytimes.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_j2vw9g",
+              "name": "The Guardian",
+              "url": "https://www.theguardian.com",
+              "description": "英国卫报",
+              "icon": "https://favicon.yandex.net/favicon/theguardian.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_xxfrsf",
+              "name": "Reuters",
+              "url": "https://www.reuters.com",
+              "description": "路透社新闻",
+              "icon": "https://www.reuters.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_d2y0kt",
+              "name": "Associated Press",
+              "url": "https://apnews.com",
+              "description": "美联社新闻",
+              "icon": "https://icon.horse/icon/apnews.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_hxsl6w",
+              "name": "The Wall Street Journal",
+              "url": "https://www.wsj.com",
+              "description": "华尔街日报",
+              "icon": "https://www.wsj.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_bq2g3z",
+              "name": "Financial Times",
+              "url": "https://www.ft.com",
+              "description": "金融时报",
+              "icon": "https://faviconsnap.com/api/favicon?url=ft.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_tco1zf",
+              "name": "Bloomberg",
+              "url": "https://www.bloomberg.com",
+              "description": "彭博新闻",
+              "icon": "https://www.bloomberg.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_uzq0rc",
+              "name": "TechCrunch",
+              "url": "https://techcrunch.com",
+              "description": "科技创业资讯",
+              "icon": "https://favicon.yandex.net/favicon/techcrunch.com",
+              "effects": {}
+            }
+          ]
+        },
+        {
+          "id": "group_mr7mwzfv_8h9ljy",
+          "name": "设计创意",
+          "color": "#e83e8c",
+          "sites": [
+            {
+              "id": "site_mr7mwzfv_52oz79",
+              "name": "Dribbble",
+              "url": "https://dribbble.com",
+              "description": "设计师作品展示平台",
+              "icon": "https://icon.horse/icon/dribbble.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_xikbnw",
+              "name": "Behance",
+              "url": "https://www.behance.net",
+              "description": "Adobe创意作品平台",
+              "icon": "https://icon.horse/icon/behance.net",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_9lv4u8",
+              "name": "Figma",
+              "url": "https://www.figma.com",
+              "description": "协作设计工具",
+              "icon": "https://faviconsnap.com/api/favicon?url=figma.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_uj68sm",
+              "name": "Canva",
+              "url": "https://www.canva.com",
+              "description": "在线设计平台",
+              "icon": "https://www.canva.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_lmuuad",
+              "name": "Unsplash",
+              "url": "https://unsplash.com",
+              "description": "免费高质量图片库",
+              "icon": "https://unsplash.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_d7ohg1",
+              "name": "Pexels",
+              "url": "https://www.pexels.com",
+              "description": "免费图片和视频素材",
+              "icon": "https://www.pexels.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_lq3xtn",
+              "name": "Adobe Creative Cloud",
+              "url": "https://www.adobe.com",
+              "description": "Adobe创意软件套件",
+              "icon": "https://www.adobe.com/favicon.ico",
+              "effects": {}
+            }
+          ]
+        },
+        {
+          "id": "group_mr7mwzfv_54teqe",
+          "name": "云服务平台",
+          "color": "#20c997",
+          "sites": [
+            {
+              "id": "site_mr7mwzfv_kt5an3",
+              "name": "Amazon AWS",
+              "url": "https://aws.amazon.com",
+              "description": "亚马逊云服务",
+              "icon": "https://icon.horse/icon/aws.amazon.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_3zwx7k",
+              "name": "Microsoft Azure",
+              "url": "https://azure.microsoft.com",
+              "description": "微软云平台",
+              "icon": "https://azure.microsoft.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_tcomjh",
+              "name": "Google Cloud",
+              "url": "https://cloud.google.com",
+              "description": "谷歌云平台",
+              "icon": "https://icon.horse/icon/cloud.google.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_qc82n4",
+              "name": "DigitalOcean",
+              "url": "https://www.digitalocean.com",
+              "description": "开发者云平台",
+              "icon": "https://icon.horse/icon/digitalocean.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_wn0td1",
+              "name": "Heroku",
+              "url": "https://www.heroku.com",
+              "description": "应用部署平台",
+              "icon": "https://faviconsnap.com/api/favicon?url=heroku.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_law7l8",
+              "name": "Vercel",
+              "url": "https://vercel.com",
+              "description": "前端部署平台",
+              "icon": "https://vercel.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_ycmrhd",
+              "name": "Netlify",
+              "url": "https://www.netlify.com",
+              "description": "静态网站托管平台",
+              "icon": "https://icon.horse/icon/netlify.com",
+              "effects": {}
+            }
+          ]
+        },
+        {
+          "id": "group_mr7mwzfv_smkghy",
+          "name": "国际电商",
+          "color": "#ffc107",
+          "sites": [
+            {
+              "id": "site_mr7mwzfv_qicpty",
+              "name": "eBay",
+              "url": "https://www.ebay.com",
+              "description": "全球在线拍卖平台",
+              "icon": "https://faviconsnap.com/api/favicon?url=ebay.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_v6ulqj",
+              "name": "Etsy",
+              "url": "https://www.etsy.com",
+              "description": "手工艺品交易平台",
+              "icon": "https://faviconsnap.com/api/favicon?url=etsy.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_xb16bi",
+              "name": "Shopify",
+              "url": "https://www.shopify.com",
+              "description": "电商建站平台",
+              "icon": "https://www.shopify.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_mfza2z",
+              "name": "AliExpress",
+              "url": "https://www.aliexpress.com",
+              "description": "阿里巴巴全球速卖通",
+              "icon": "https://www.aliexpress.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_68re8s",
+              "name": "Walmart",
+              "url": "https://www.walmart.com",
+              "description": "沃尔玛在线商城",
+              "icon": "https://www.walmart.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_xs20vd",
+              "name": "Target",
+              "url": "https://www.target.com",
+              "description": "塔吉特百货",
+              "icon": "https://www.target.com/favicon.ico",
+              "effects": {}
+            }
+          ]
+        },
+        {
+          "id": "group_mr7mwzfv_hgvmwm",
+          "name": "流媒体娱乐",
+          "color": "#6f42c1",
+          "sites": [
+            {
+              "id": "site_mr7mwzfv_s9agy8",
+              "name": "Netflix",
+              "url": "https://www.netflix.com",
+              "description": "网飞流媒体平台",
+              "icon": "https://www.netflix.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_gnt36t",
+              "name": "Disney+",
+              "url": "https://www.disneyplus.com",
+              "description": "迪士尼流媒体服务",
+              "icon": "https://www.disneyplus.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_248iyo",
+              "name": "Amazon Prime Video",
+              "url": "https://www.primevideo.com",
+              "description": "亚马逊视频服务",
+              "icon": "https://faviconsnap.com/api/favicon?url=primevideo.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_aspq1q",
+              "name": "Hulu",
+              "url": "https://www.hulu.com",
+              "description": "Hulu流媒体平台",
+              "icon": "https://www.hulu.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_k59dsp",
+              "name": "Spotify",
+              "url": "https://www.spotify.com",
+              "description": "Spotify音乐流媒体",
+              "icon": "https://www.spotify.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_tahypi",
+              "name": "Apple Music",
+              "url": "https://music.apple.com",
+              "description": "苹果音乐服务",
+              "icon": "https://music.apple.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_002wo2",
+              "name": "Twitch",
+              "url": "https://www.twitch.tv",
+              "description": "游戏直播平台",
+              "icon": "https://faviconsnap.com/api/favicon?url=twitch.tv&size=128",
+              "effects": {}
+            }
+          ]
+        },
+        {
+          "id": "group_mr7mwzfv_91uz3t",
+          "name": "参考工具",
+          "color": "#17a2b8",
+          "sites": [
+            {
+              "id": "site_mr7mwzfv_ix3g80",
+              "name": "Wikipedia",
+              "url": "https://www.wikipedia.org",
+              "description": "维基百科",
+              "icon": "https://www.wikipedia.org/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_8gq00h",
+              "name": "Wolfram Alpha",
+              "url": "https://www.wolframalpha.com",
+              "description": "计算知识引擎",
+              "icon": "https://icon.horse/icon/wolframalpha.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_uz4kod",
+              "name": "Dictionary.com",
+              "url": "https://www.dictionary.com",
+              "description": "在线英语词典",
+              "icon": "https://faviconsnap.com/api/favicon?url=dictionary.com&size=128",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_e0fq73",
+              "name": "Merriam-Webster",
+              "url": "https://www.merriam-webster.com",
+              "description": "韦氏词典",
+              "icon": "https://www.merriam-webster.com/favicon.ico",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_bei835",
+              "name": "Grammarly",
+              "url": "https://www.grammarly.com",
+              "description": "英语语法检查工具",
+              "icon": "https://icon.horse/icon/grammarly.com",
+              "effects": {}
+            },
+            {
+              "id": "site_mr7mwzfv_m2gsu0",
+              "name": "Thesaurus.com",
+              "url": "https://www.thesaurus.com",
+              "description": "英语同义词词典",
+              "icon": "https://icon.horse/icon/thesaurus.com",
+              "effects": {}
+            }
+          ]
+        }
       ]
     }
   ]
