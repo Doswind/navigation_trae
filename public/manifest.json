@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "站点导航",
+  "version": "1.0.0",
+  "description": "自定义站点导航新标签页，支持多页面管理、分组、拖拽排序和数据导入导出。",
+  "permissions": ["storage", "tabs"],
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "32": "icon32.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    },
+    "default_title": "站点导航"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "32": "icon32.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
