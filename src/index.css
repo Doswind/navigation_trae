@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --theme-page: #f8f9fb;
+  --theme-header: rgba(255, 255, 255, 0.92);
+  --theme-card: #ffffff;
+  --theme-card-hover: #f1f5f9;
+  --theme-input: #ffffff;
+  --theme-primary: #18181b;
+  --theme-secondary: #3f3f46;
+  --theme-muted: #71717a;
+  --theme-border: #e4e4e7;
+  --theme-border-strong: #d4d4d8;
+
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.4;
+  font-weight: 400;
+  font-size: 13px;
+
+  color-scheme: light;
+  color: var(--theme-primary);
+  background-color: var(--theme-page);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  --theme-page: #0f0f11;
+  --theme-header: rgba(15, 15, 17, 0.92);
+  --theme-card: rgba(24, 24, 27, 0.6);
+  --theme-card-hover: rgba(39, 39, 42, 0.8);
+  --theme-input: #09090b;
+  --theme-primary: #e4e4e7;
+  --theme-secondary: #a1a1aa;
+  --theme-muted: #71717a;
+  --theme-border: rgba(255, 255, 255, 0.1);
+  --theme-border-strong: rgba(255, 255, 255, 0.16);
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .effect-highlight {
+    border-color: rgba(250, 204, 21, 0.7);
+    background-color: rgba(250, 204, 21, 0.18);
+  }
+
+  .effect-blink {
+    border-color: rgba(239, 68, 68, 0.7);
+    animation: blinkBg 1.6s ease-in-out infinite;
+  }
+
+  .effect-bounce {
+    border-color: rgba(59, 130, 246, 0.7);
+    animation: bounceCard 1.2s ease-in-out infinite;
+  }
+
+  .effect-shake {
+    border-color: rgba(168, 85, 247, 0.7);
+    animation: shakeCard 0.6s ease-in-out infinite;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+  }
+
+  .dark .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .dark .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+}
+
+@keyframes blinkBg {
+  0%, 100% {
+    background-color: rgba(239, 68, 68, 0.08);
+  }
+  50% {
+    background-color: rgba(239, 68, 68, 0.32);
+  }
+}
+
+@keyframes bounceCard {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes shakeCard {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-4px);
+  }
+  75% {
+    transform: translateX(4px);
+  }
+}
