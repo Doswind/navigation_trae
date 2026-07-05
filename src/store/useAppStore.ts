@@ -103,6 +103,7 @@ interface AppState {
   addPage: (page: Omit<Page, 'id' | 'groups'>) => void;
   updatePage: (id: string, updates: Partial<Page>) => void;
   deletePage: (id: string) => void;
+  reorderPages: (pageIds: string[]) => void;
 
   addGroup: (group: Omit<Group, 'id' | 'sites'>, pageId?: string) => void;
   updateGroup: (pageId: string, groupId: string, updates: Partial<Group>) => void;
@@ -214,6 +215,14 @@ export const useAppStore = create<AppState>((set, get) => {
       if (currentPageId === id) {
         setCurrentPageId(newPages[0]?.id || '');
       }
+    },
+
+    reorderPages: (pageIds) => {
+      const { data } = get();
+      const map = new Map(data.pages.map((p) => [p.id, p]));
+      const newData = { ...data, pages: pageIds.map((id) => map.get(id)!).filter(Boolean) };
+      persistData(newData);
+      set({ data: newData, dirty: false });
     },
 
     addGroup: (group, pageId) => {

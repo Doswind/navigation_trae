@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+
 import {
   DndContext,
   DragOverlay,
@@ -12,6 +13,7 @@ import {
 import { SortableContext, rectSortingStrategy } from '@dnd-kit/sortable';
 import { Plus } from 'lucide-react';
 import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
 import { GroupCard } from '@/components/GroupCard';
 import { SiteCard } from '@/components/SiteCard';
 import { PageForm } from '@/components/PageForm';
@@ -24,7 +26,7 @@ import { ConfirmDialog } from '@/components/ConfirmDialog';
 import { useAppStore } from '@/store/useAppStore';
 import { useI18n } from '@/hooks/useI18n';
 import { cn } from '@/lib/utils';
-import type { Group, Site } from '@/types';
+import type { Group, Page, Site } from '@/types';
 
 export default function Home() {
   const { t } = useI18n();
@@ -42,12 +44,16 @@ export default function Home() {
     reorderGroups,
     reorderSites,
     moveSite,
+    reorderPages,
   } = useAppStore();
 
   const currentPage = data.pages.find((p) => p.id === currentPageId);
 
   const [activeGroup, setActiveGroup] = useState<Group | null>(null);
   const [activeSite, setActiveSite] = useState<Site | null>(null);
+  const [activePage, setActivePage] = useState<Page | null>(null);
+
+  const pageIds = useMemo(() => data.pages.map((p) => p.id), [data.pages]);
 
   const sensors = useSensors(
     useSensor(PointerSensor, {
@@ -71,7 +77,10 @@ export default function Home() {
   const handleDragStart = (event: DragStartEvent) => {
     const { active } = event;
     const type = active.data.current?.type;
-    if (type === 'group') {
+    if (type === 'page') {
+      const page = data.pages.find((p) => p.id === active.id);
+      if (page) setActivePage(page);
+    } else if (type === 'group') {
       const group = currentPage?.groups.find((g) => g.id === active.id);
       if (group) setActiveGroup(group);
     } else if (type === 'site') {
@@ -109,12 +118,22 @@ export default function Home() {
     const { active, over } = event;
     setActiveGroup(null);
     setActiveSite(null);
+    setActivePage(null);
 
     if (!over) return;
 
     const activeType = active.data.current?.type;
 
-    if (activeType === 'group') {
+    if (activeType === 'page') {
+      if (active.id === over.id) return;
+      const oldIndex = pageIds.indexOf(String(active.id));
+      const newIndex = pageIds.indexOf(String(over.id));
+      if (oldIndex === -1 || newIndex === -1) return;
+      const newPageIds = [...pageIds];
+      const [moved] = newPageIds.splice(oldIndex, 1);
+      newPageIds.splice(newIndex, 0, moved);
+      reorderPages(newPageIds);
+    } else if (activeType === 'group') {
       if (active.id === over.id) return;
       const oldIndex = groupIds.indexOf(String(active.id));
       const newIndex = groupIds.indexOf(String(over.id));
@@ -177,10 +196,10 @@ export default function Home() {
       onDragOver={handleDragOver}
       onDragEnd={handleDragEnd}
     >
-      <div className="min-h-screen bg-theme-page">
+      <div className="flex min-h-screen flex-col bg-theme-page">
         <Header />
 
-        <main className="mx-auto w-full px-4 py-3">
+        <main className="mx-auto w-full flex-1 px-4 py-3">
           {currentPage ? (
             <SortableContext items={groupIds} strategy={rectSortingStrategy}>
               <div className={cn('grid gap-3', getGroupCols())}>
@@ -202,9 +221,19 @@ export default function Home() {
             <div className="py-20 text-center text-sm text-theme-muted">{t('noPages')}</div>
           )}
         </main>
+
+        <Footer />
       </div>
 
       <DragOverlay dropAnimation={null}>
+        {activePage ? (
+          <div className="rounded-lg border border-theme-border-strong bg-blue-500 px-3 py-1.5 opacity-90 shadow-xl">
+            <div className="flex items-center gap-2">
+              <div className="h-2 w-2 rounded-full bg-white/80" style={{ backgroundColor: activePage.color }} />
+              <span className="text-xs font-medium text-white">{activePage.name}</span>
+            </div>
+          </div>
+        ) : null}
         {activeGroup ? (
           <div className="rounded-lg border border-theme-border-strong bg-theme-card p-3 opacity-90 shadow-xl">
             <div className="flex items-center gap-2">
